@@ -1,0 +1,10 @@
+#googleMap{
+	float:right;
+	margin: 0 auto;
+	width:500px;
+	height:380px;
+}
+
+#containerText{
+	height:400px;
+}

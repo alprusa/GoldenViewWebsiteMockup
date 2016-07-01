@@ -1,0 +1,23 @@
+#googleMap{
+	float:right;
+	margin: 0 auto;
+	width:500px;
+	height:380px;
+}
+
+#containerText{
+	height:400px;
+}
+
+@media (max-width: 825px) {
+	#containerText{
+		height:500px;
+	}
+	
+	#googleMap{
+		float:center;
+		margin: 0 auto;
+		width:500px;
+		height:380px;
+	}
+}
