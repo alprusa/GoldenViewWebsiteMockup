@@ -81,7 +81,7 @@
 
                     <!--Video slide index 2 the core release video-->
                     <div class="item">
-                        <img style="border: 1px #ffdf27 solid" src = "img/tempImg.png" width="560" height="140" alt="Solvang" class="carouselItems img-responsive">
+                        <img src = "img/tempImg.png" width="560" height="140" alt="Solvang" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3>Solvang</h3>
                         </div>
@@ -103,21 +103,20 @@
 			</div>
 			
 			<!--Body Text-->
-			<h3 style="text-align: center;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
+			<h3 style="text-align: center;">Service designed to allow seniors to stay where they desire, in their own homes</h3>
 			
 			<!--Read more info direction sections-->
 			<table id="columnData">
 			    <td class="dataList spaceList">
 			    	<h4>Services</h4>
-			    	<p>Service designed to allow seniors to stay where they desire, in their own homes. With personal care,
-			    		meal preparation, and house keeping. With 1 to 24 hours available per day.</p>
-			    	<a href="services/" class="pull-right"><mark>read more</mark></a>
+			    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+			    		ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud </p>
+			    	<a href="#" class="pull-right"><mark>read more</mark></a>
 			    </td>
 			    <td class="dataList spaceList">
 			    	<h4>Benefits</h4>
-			    	<p>We provide one on one care, allowing you to maintain control of you. With living at home there are no
-			    		strict rules of visitation as with facilities. Your individual needs will be addressed as we know
-			    		not everyone is the same.</p>
+			    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+			    		ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud </p>
 			    	<a href="#" class="pull-right"><mark>read more</mark></a>
 			    </td>
 			     <td class="spaceList">
