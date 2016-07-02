@@ -23,15 +23,12 @@
 	
 	#containerText{
 		text-align: left;
-		height: 400px;
 	}
 }
 
 
 @media (max-width: 700px) {
-	#containerText{
-		height: 500px;
-	}
+	
 	
 	#googleMap{
 		margin: 0 auto;

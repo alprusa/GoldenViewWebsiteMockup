@@ -57,7 +57,6 @@
  				<!--Google Map for directions-->
 	 			<div id="googleMap"></div>
 	 			
-	 			<div id="infoContainer">
 	 			<!--email section-->
 	 			<p ><b>Contact Us:</b>
                      <a id="emails" href="mailto:goldenviewseniorservices@yahoo.com?subject=Golden View Senior Services">
@@ -76,13 +75,16 @@
 	 			<div>
 	 				<p><b>Get Directions:</b></p>
 	 				<form action="demo_form.asp">
-						<input type="text" name="StreetAddress" placeholder="Your Street Address"><br>
-						<input type="text" name="City" placeholder="City"><br>
-						<input type="text" name="State" placeholder="State"><br>
-						<input type="text" name="Zipcode" placeholder="Zipcode"><br>
-						<input id="submitButton" type="submit" value="Submit" style="margin-top: 5px;">
+					First name: <input type="text" name="FirstName" value="Mickey" placeholder="Your Street Address"><br>
+					Last name: <input type="text" name="LastName" value="Mouse"><br>
+					<input type="submit" value="Submit">
 					</form>
-	 			</div>
+	 				<div width="100px" heigh="50px">
+	 				<textarea type="text" class="form-control" id="streetAddress" rows=4 placeholder="Your Street Address" required></textarea>
+	 				<textarea type="text" class="form-control" id="city" rows=4 placeholder="City" required></textarea>
+	 				<textarea type="text" class="form-control" id="state" rows=4 placeholder="State" required></textarea>
+	 				<textarea type="text" class="form-control" id="zipcode" rows=4 placeholder="Zipcode" required></textarea>
+	 				</div>
 	 			</div>
  			</div>
  			

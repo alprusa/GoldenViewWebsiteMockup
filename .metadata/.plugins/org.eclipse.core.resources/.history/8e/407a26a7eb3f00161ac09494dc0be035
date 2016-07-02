@@ -53,11 +53,11 @@
              </nav>
              
  			<!--Main text field-->
+ 			<div id="googleMap"></div>
  			<div id="containerText">
  				<!--Google Map for directions-->
-	 			<div id="googleMap"></div>
 	 			
-	 			<div id="infoContainer">
+	 			
 	 			<!--email section-->
 	 			<p ><b>Contact Us:</b>
                      <a id="emails" href="mailto:goldenviewseniorservices@yahoo.com?subject=Golden View Senior Services">
@@ -82,7 +82,6 @@
 						<input type="text" name="Zipcode" placeholder="Zipcode"><br>
 						<input id="submitButton" type="submit" value="Submit" style="margin-top: 5px;">
 					</form>
-	 			</div>
 	 			</div>
  			</div>
  			

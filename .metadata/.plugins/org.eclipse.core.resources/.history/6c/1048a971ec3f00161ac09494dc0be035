@@ -1,14 +1,12 @@
 #googleMap{
+	
 	margin: 0 auto;
 	width:500px;
 	height:380px;
 }
 
 #containerText{
-	padding-top: 5px;
-	height:700px;
-	text-align: center;
-	margin: 0 auto;
+	height:400px;
 }
 
 #submitButton{
@@ -16,21 +14,13 @@
 	color: #ffdf27 !important;
 }
 
-@media (min-width: 1200px) {
-	#googleMap{
-		float: right;
-	}
-	
-	#containerText{
-		text-align: left;
-		height: 400px;
-	}
-}
-
 
 @media (max-width: 700px) {
 	#containerText{
-		height: 500px;
+		padding-top: 5px;
+		height:700px;
+		text-align: center;
+		margin: 0 auto;
 	}
 	
 	#googleMap{

@@ -4,7 +4,7 @@ function initialize() {
   	var mapProp = {
 	    center:mapCenterPoint,
 	    zoom:17,
-	    mapTypeId:google.maps.MapTypeId.ROADMAP
+	    mapTypeId:google.maps.MapTypeId.HYBRID
 	};
 	
   	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);

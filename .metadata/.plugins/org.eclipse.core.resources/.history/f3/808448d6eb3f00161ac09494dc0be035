@@ -1,0 +1,28 @@
+#googleMap{
+	float:right;
+	margin: 0 auto;
+	width:500px;
+	height:380px;
+}
+
+#containerText{
+	height:400px;
+}
+
+#submitButton{
+	background-color: #535353 !important;
+	color: #ffdf27 !important;
+}
+
+@media (max-width: 850px) {
+	#containerText{
+		padding-top: 5px;
+		height:700px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	#googleMap{
+		float:center;
+	}
+}

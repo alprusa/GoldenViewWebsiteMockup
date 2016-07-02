@@ -23,7 +23,7 @@ function initialize() {
 	});
 	
 	marker.setAnimation(google.maps.Animation.BOUNCE);
-    setTimeout(function(){ marker.setAnimation(null); }, 2250);
+    setTimeout(function(){  }, 2250);
 	
 	marker.setMap(map);
 	
@@ -33,11 +33,6 @@ function initialize() {
 	
 	infowindow.open(map,marker);
 
-	google.maps.event.addListener(map,'center_changed',function() {
-	  window.setTimeout(function() {
-	    map.panTo(marker.getPosition());
-	  },3000);
-	});
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
