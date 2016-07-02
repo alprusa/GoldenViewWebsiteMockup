@@ -57,6 +57,19 @@
  				<!--Google Map for directions-->
 	 			<div id="googleMap"></div>
 	 			
+	 			<!--Text directions pop-up box-->
+	 			<div id="directionsModal" class="modal">
+
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <span class="close">x</span>
+				    <div id="textDirections"></div>
+				    <button id="printButton" class="gVButton" type="button" style="margin-top: 5px;" onclick="print();">Print</button>
+				    
+				  </div>
+				
+				</div>
+	 			
 	 			<div id="infoContainer">
 		 			<!--email section-->
 		 			<p ><b>Contact Us:</b>
@@ -79,7 +92,9 @@
 						<input type="text" name="City" id="City" placeholder="City" required><br>
 						<input type="text" name="State" id="State" placeholder="State" required><br>
 						<input type="text" name="Zipcode" id="Zipcode" placeholder="Zipcode" required><br>
-						<input id="submitButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();">
+						<input id="submitButton" class="gVButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();">
+						<input id="reopenButton" class="gVButton hidden" type="button" value="See Results" style="margin-top: 5px;" onclick="directionsWindow();">
+						<p style="color: #E82C0C;" id="errorText" class="hidden">Sorry the was an issue getting directions.</p>
 		 			</div>
 	 			</div>
  			</div>

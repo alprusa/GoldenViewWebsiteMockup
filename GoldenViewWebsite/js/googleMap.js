@@ -6,6 +6,8 @@ var marker;
 var mapTimer;
 var map;
 
+var directionsCalculated = false;
+
 
 function initialize() {
 	directionsDisplay = new google.maps.DirectionsRenderer();
@@ -63,6 +65,11 @@ function calcRoute() {
   directionsService.route(request, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
       directionsDisplay.setDirections(response);
+      directionsCalculated = true;
+    } else{
+    	$("#errorText").removeClass("hidden");
+    	console.log('Directions request failed due to ' + status);
+    	directionsCalculated = false;
     }
   });
   
@@ -70,6 +77,55 @@ function calcRoute() {
   clearTimeout(mapTimer);
 
 	marker.setMap(null);
+	
+	directionsWindow();
+}
+
+//modal functionality
+var modal = document.getElementById('directionsModal');
+	
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function directionsWindow(){
+	// open the modal
+	modal.style.display = "block";
+
+	$('#textDirections').empty();
+	$('#reopenButton').removeClass("hidden");
+	
+	//set directions on the modal
+	directionsDisplay.setPanel(document.getElementById('textDirections'));
+}
+
+function print(){
+	var printwindow = window.open('', 'printDirections', 'scrollbars=1,height=400,width=600');
+    printwindow.document.write('<html><head><title>Directions</title>');
+    printwindow.document.write('</head><body>');
+    printwindow.document.write('<div id="textDirections"></div>');
+    printwindow.document.write('</body></html>');
+    
+	directionsDisplay.setPanel(printwindow.document.getElementById('textDirections'));
+
+    printwindow.document.close(); // necessary for IE >= 10
+    printwindow.focus(); // necessary for IE >= 10
+
+    printwindow.print();
+    printwindow.close();
+	
+	modal.style.display = "none";
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
