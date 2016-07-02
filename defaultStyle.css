@@ -68,6 +68,7 @@ a:focus{
 #logo{
 	margin: 0 auto;
     width:200px;
+    border: 2px #ffdf27 solid;
 }
 
 /*carousel css content8*/
