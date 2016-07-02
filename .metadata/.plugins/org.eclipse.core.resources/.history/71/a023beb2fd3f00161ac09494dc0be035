@@ -1,9 +1,7 @@
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var mapCenterPoint = new google.maps.LatLng(34.638650, -120.451350,17); //loaction of goldenView
-var markerListener;
 var marker;
-var mapTimer;
 var map;
 
 
@@ -41,8 +39,8 @@ function initialize() {
 	
 	infowindow.open(map,marker);
 
-	markerListener = google.maps.event.addListener(map,'center_changed',function() {
-	  mapTimer = window.setTimeout(function() {
+	google.maps.event.addListener(map,'center_changed',function() {
+	  window.setTimeout(function() {
 	    map.panTo(marker.getPosition());
 	  },3000);
 	});
@@ -65,11 +63,8 @@ function calcRoute() {
       directionsDisplay.setDirections(response);
     }
   });
-  
-  google.maps.event.removeListener(markerListener);
-  clearTimeout(mapTimer);
 
-	marker.setMap(null);
+	marker.removeMap(map);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);

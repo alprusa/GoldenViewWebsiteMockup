@@ -58,29 +58,31 @@
 	 			<div id="googleMap"></div>
 	 			
 	 			<div id="infoContainer">
-		 			<!--email section-->
-		 			<p ><b>Contact Us:</b>
-	                     <a id="emails" href="mailto:goldenviewseniorservices@yahoo.com?subject=Golden View Senior Services">
-	                     	<mark>email</mark>
-	                     </a>
-		        	</p>
-		 			
-		 			<!--address phone number section-->
-		 			<div>
-		 				<p><b>Address:</b> 104 South C St. Suite D
-		 					Lompoc, CA 93436</p>
-		 				<p><b>Phone:</b> (805) 740-9608</p>
-		 				<p><b>Fax:</b> (805) 740-2044</p>
-		 			</div>
-		 			
-		 			<div>
-		 				<p><b>Get Directions:</b></p>
-						<input type="text" name="StreetAddress" id="StreetAddress" placeholder="Your Street Address" required><br>
-						<input type="text" name="City" id="City" placeholder="City" required><br>
-						<input type="text" name="State" id="State" placeholder="State" required><br>
-						<input type="text" name="Zipcode" id="Zipcode" placeholder="Zipcode" required><br>
-						<input id="submitButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();">
-		 			</div>
+	 			<!--email section-->
+	 			<p ><b>Contact Us:</b>
+                     <a id="emails" href="mailto:goldenviewseniorservices@yahoo.com?subject=Golden View Senior Services">
+                     	<mark>email</mark>
+                     </a>
+	        	</p>
+	 			
+	 			<!--address phone number section-->
+	 			<div>
+	 				<p><b>Address:</b> 104 South C St. Suite D
+	 					Lompoc, CA 93436</p>
+	 				<p><b>Phone:</b> (805) 740-9608</p>
+	 				<p><b>Fax:</b> (805) 740-2044</p>
+	 			</div>
+	 			
+	 			<div>
+	 				<p><b>Get Directions:</b></p>
+	 				<form action="demo_form.asp">
+						<input type="text" name="StreetAddress" placeholder="Your Street Address"><br>
+						<input type="text" name="City" placeholder="City"><br>
+						<input type="text" name="State" placeholder="State"><br>
+						<input type="text" name="Zipcode" placeholder="Zipcode"><br>
+						<input id="submitButton" type="submit" value="Submit" style="margin-top: 5px;">
+					</form>
+	 			</div>
 	 			</div>
  			</div>
  			
@@ -95,7 +97,7 @@
 		<script src="../jquery-1.2.0.js"></script>
     	<script src="../bootstrap/js/bootstrap.min.js"></script>
     	
-    	<script src="http://maps.googleapis.com/maps/api/js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&avoid=highways&mode=bicycling"></script>
     	<script src="../js/googleMap.js"></script>
 	</body>
 </html>

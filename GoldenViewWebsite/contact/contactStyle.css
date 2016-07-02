@@ -16,6 +16,10 @@
 	color: #ffdf27 !important;
 }
 
+input[type=text]{
+  border-radius:3px;
+}
+
 @media (min-width: 1200px) {
 	#googleMap{
 		float: right;

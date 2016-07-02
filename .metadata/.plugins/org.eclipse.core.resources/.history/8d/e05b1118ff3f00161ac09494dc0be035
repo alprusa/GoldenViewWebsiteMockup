@@ -17,7 +17,7 @@
 }
 
 input[type=text]{
-  border-radius:3px;
+  border-radius:10px;
 }
 
 @media (min-width: 1200px) {

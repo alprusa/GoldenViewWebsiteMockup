@@ -1,9 +1,6 @@
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 var mapCenterPoint = new google.maps.LatLng(34.638650, -120.451350,17); //loaction of goldenView
-var markerListener;
-var marker;
-var mapTimer;
 var map;
 
 
@@ -26,8 +23,9 @@ function initialize() {
 	    new google.maps.Size(50, 50)
 	);  
 
-  	marker=new google.maps.Marker({
+  	var marker=new google.maps.Marker({
 	  position:mapCenterPoint,
+	  //animation:google.maps.Animation.BOUNCE
 	});
 	
 	marker.setAnimation(google.maps.Animation.BOUNCE);
@@ -41,8 +39,8 @@ function initialize() {
 	
 	infowindow.open(map,marker);
 
-	markerListener = google.maps.event.addListener(map,'center_changed',function() {
-	  mapTimer = window.setTimeout(function() {
+	google.maps.event.addListener(map,'center_changed',function() {
+	  window.setTimeout(function() {
 	    map.panTo(marker.getPosition());
 	  },3000);
 	});
@@ -50,10 +48,31 @@ function initialize() {
 	directionsDisplay.setMap(map);
 }
 
-function calcRoute() {
+$('form').submit(function(e) {
+    e.preventDefault();
+
+    $.ajax({
+        method: "POST",
+        data: {
+        	StreetAddress: $('#StreetAddress').val(),
+        	City: $('#City').val(),
+            State: $('#State').val(),
+            Zipcode: $('#Zipcode').val()
+        },
+        dataType: "json"
+    }).error(function(x, status, error){
+    	console.log("Failed");
+    }). success(function(data, status) {
+    	var lang = 41.850033;
+    	var lat = -87.6500523;
+		calcRoute(lang, lat);
+    });
+});
+
+function calcRoute(lang, lat) {
   var selectedMode = "DRIVING";
   var request = {
-      origin: $('#StreetAddress').val() + " "+ $('#City').val() + " " + $('#State').val() + " " + $('#Zipcode').val(),
+      origin: "Los Angeles, Ca",
       destination: mapCenterPoint,
       // Note that Javascript allows us to access the constant
       // using square brackets and a string value as its
@@ -65,11 +84,12 @@ function calcRoute() {
       directionsDisplay.setDirections(response);
     }
   });
-  
-  google.maps.event.removeListener(markerListener);
-  clearTimeout(mapTimer);
 
-	marker.setMap(null);
+	/*google.maps.event.removeListener(map,'center_changed',function() {
+	  window.setTimeout(function() {
+	    map.panTo(marker.getPosition());
+	  },3000);
+	});*/
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
