@@ -43,7 +43,7 @@
                     <div class="collapse navbar-collapse" id="navItems">
                         <ul class="nav navbar-nav">
                             <li><a href="../">Home</a></li>
-							<li><a href="../services/">Services</a></li>
+							<li><a href="#Benefits">Services</a></li>
 							<li><a href="../about/">About Us</a></li>
 							<li><a href="../contact/">Contact</a></li>
                         </ul>
@@ -78,8 +78,8 @@
 	 			</div>
 	 			
 	 			<!--Services text section 2-->
-	 			<div>
-	 				<h3 name="Benefits">Benefits</h3>
+	 			<div name="Benefits">
+	 				<h3 >Benefits</h3>
 	 				<p>Provided with one on one care. The hospital settings will generally assign many clients to one
 	 					caregiver leaving you to often have to wait for services. The services you are paying good money
 	 					for should not be delayed by understaffed facilities.
