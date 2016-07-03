@@ -71,6 +71,11 @@ a:focus{
     border: 2px #ffdf27 solid;
 }
 
+:target {
+  animation: highlight 1s ease;  
+  transform: translateX(20px);     
+}
+
 /*carousel css content8*/
 #thecarousel{
     margin-top: 1%;

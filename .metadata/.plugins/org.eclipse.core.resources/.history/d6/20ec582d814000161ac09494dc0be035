@@ -78,8 +78,8 @@
 	 			</div>
 	 			
 	 			<!--Services text section 2-->
-	 			<div>
-	 				<h3 name="Benefits">Benefits</h3>
+	 			<div name="Benefits">
+	 				<h3 >Benefits</h3>
 	 				<p>Provided with one on one care. The hospital settings will generally assign many clients to one
 	 					caregiver leaving you to often have to wait for services. The services you are paying good money
 	 					for should not be delayed by understaffed facilities.

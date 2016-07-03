@@ -98,7 +98,55 @@
 	 			
 	 			<!--Services text section 3-->
 	 			<div>
-	 				<h3>Meal Preparation</h3>
+	 				<h3 name="MealPrep">Meal Preparation</h3>
+	 				<p>Our caregivers will shop for your meals and prepare your meals for you. Meals will be planning in a
+	 					menu that you get to decide on our care givers will not force you to eat meals you do not like. Your
+	 					meals will be served to you will assitance in eating if you need help. And you do not need to worry
+	 					about cleaning up our care givers will take care of the clean up of your meals.</p>
+	 			</div>
+	 			
+	 			<!--Services text section 4-->
+	 			<div>
+	 				<h3>House Keeping</h3>
+	 				<p>We provide light cleaning of the house. Care givers will change bed linens, wash dishes, vacuum, do
+	 					the laundry, and any other light cleaning needed around your home.</p>
+	 			</div>
+	 			
+	 			<!--Services text section 3-->
+	 			<div>
+	 				<h3 name="MealPrep">Meal Preparation</h3>
+	 				<p>Our caregivers will shop for your meals and prepare your meals for you. Meals will be planning in a
+	 					menu that you get to decide on our care givers will not force you to eat meals you do not like. Your
+	 					meals will be served to you will assitance in eating if you need help. And you do not need to worry
+	 					about cleaning up our care givers will take care of the clean up of your meals.</p>
+	 			</div>
+	 			
+	 			<!--Services text section 4-->
+	 			<div>
+	 				<h3>House Keeping</h3>
+	 				<p>We provide light cleaning of the house. Care givers will change bed linens, wash dishes, vacuum, do
+	 					the laundry, and any other light cleaning needed around your home.</p>
+	 			</div>
+	 			
+	 			<!--Services text section 3-->
+	 			<div>
+	 				<h3 name="MealPrep">Meal Preparation</h3>
+	 				<p>Our caregivers will shop for your meals and prepare your meals for you. Meals will be planning in a
+	 					menu that you get to decide on our care givers will not force you to eat meals you do not like. Your
+	 					meals will be served to you will assitance in eating if you need help. And you do not need to worry
+	 					about cleaning up our care givers will take care of the clean up of your meals.</p>
+	 			</div>
+	 			
+	 			<!--Services text section 4-->
+	 			<div>
+	 				<h3>House Keeping</h3>
+	 				<p>We provide light cleaning of the house. Care givers will change bed linens, wash dishes, vacuum, do
+	 					the laundry, and any other light cleaning needed around your home.</p>
+	 			</div>
+	 			
+	 			<!--Services text section 3-->
+	 			<div>
+	 				<h3 name="MealPrep">Meal Preparation</h3>
 	 				<p>Our caregivers will shop for your meals and prepare your meals for you. Meals will be planning in a
 	 					menu that you get to decide on our care givers will not force you to eat meals you do not like. Your
 	 					meals will be served to you will assitance in eating if you need help. And you do not need to worry
