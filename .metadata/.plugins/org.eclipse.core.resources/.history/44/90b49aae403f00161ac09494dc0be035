@@ -1,8 +1,0 @@
-#googleMap{
-	float:right;
-	margin: 0 auto;
-}
-
-#containerText{
-	padding-bottom: 20px;
-}
