@@ -86,6 +86,10 @@ a:focus{
     float:  center;
 }
 
+.carouselText{
+	color: #ffdf27;
+}
+
 /*three column text*/
 #columnData{
 	margin: 0 auto;

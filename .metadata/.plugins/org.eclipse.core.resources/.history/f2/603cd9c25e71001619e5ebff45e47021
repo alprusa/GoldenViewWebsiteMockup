@@ -67,7 +67,7 @@
                     <div class="item active">
                         <img src = "img/tempImg.png" width="560" height="140" alt="Lompoc" class="carouselItems img-responsive">
                         <div class="carousel-caption">
-                            <h3 class="carouselText">Lompoc</h3>
+                            <h3 id="carouselText">Lompoc</h3>
                         </div>
                     </div>
 
@@ -75,7 +75,7 @@
                     <div class="item">
                         <img src = "img/tempImg.png" width="560" height="140" alt="Buelton" class="carouselItems img-responsive">
                         <div class="carousel-caption">
-                            <h3 class="carouselText">Buellton</h3>
+                            <h3 id="carouselText">Buellton</h3>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@
                     <div class="item">
                         <img src = "img/tempImg.png" width="560" height="140" alt="Solvang" class="carouselItems img-responsive">
                         <div class="carousel-caption">
-                            <h3 class="carouselText">Solvang</h3>
+                            <h3 id="carouselText">Solvang</h3>
                         </div>
                     </div>
                 </div>
