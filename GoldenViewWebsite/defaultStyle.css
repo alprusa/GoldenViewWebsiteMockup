@@ -13,10 +13,7 @@ mark{
 	color: #ffdf27 !important;
 }
 
-mark:hover{
-	background-color: #ffdf27 !important;
-	color: #535353 !important;
-}
+
 
 /*navigation bar css content*/
 
@@ -56,8 +53,9 @@ mark:hover{
 a:hover,
 a:focus{
     text-decoration: underline !important;
-	color:#535353 !important;
-	text-decoration-color:#535353 !important;
+	color:#ffdf27 !important;
+	background-color: #535353 !important;
+	text-decoration-color:#ffdf27 !important;
 }
 
 /*content inside the navigation bar*/
