@@ -61,7 +61,7 @@
              
  			<!--Main text field-->
  			<div id="containerText">
- 				 <img src = "../img/Lompoc.JPG" width="560" height="140" alt="Lompoc" id="aboutImg" class="img-responsive">
+ 				 <img src = "../img/Lompoc.JPG" width="560" height="140" alt="Solvang" id="aboutImg" class="img-responsive">
  				 
 	 			<!--Services text section 1-->
 	 			<div>
