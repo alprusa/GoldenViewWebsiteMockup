@@ -40,11 +40,11 @@
 </editorArea>
 <editor activePart="true" focus="true" id="com.aptana.editor.html" name="index.html" partName="index.html" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/index.html" title="index.html" tooltip="GoldenViewWebsite/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5875" selectionTopPixel="1530"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1685" selectionTopPixel="461"/>
 </editor>
 <editor id="com.aptana.editor.css" name="defaultStyle.css" partName="defaultStyle.css" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/defaultStyle.css" title="defaultStyle.css" tooltip="GoldenViewWebsite/defaultStyle.css" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/defaultStyle.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1140" selectionTopPixel="796"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1338" selectionTopPixel="960"/>
 </editor>
 <editor id="com.aptana.editor.html" name="index.html" partName="index.html | services" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/services/index.html" title="index.html | services" tooltip="GoldenViewWebsite/services/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/services/index.html"/>
@@ -206,19 +206,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/services/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/about/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/whyagealone/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/GoldenViewWebsite/defaultStyle.css"/>
 </editors>
-<item historyLabel="googleMap.js" index="1">
-<position info="not_deleted" x="296" y="0"/>
-</item>
-<item historyLabel="googleMap.js" index="1">
-<position/>
-</item>
-<item historyLabel="googleMap.js" index="1">
-<position info="not_deleted" x="2925" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
 <item historyLabel="googleMap.js" index="1">
 <position info="not_deleted" x="1320" y="0"/>
 </item>
@@ -354,8 +343,20 @@
 <item historyLabel="index.html | services" index="5">
 <position info="not_deleted" x="3817" y="0"/>
 </item>
-<item active="true" historyLabel="index.html" index="3">
+<item historyLabel="index.html" index="3">
 <position info="not_deleted" x="5870" y="0"/>
+</item>
+<item historyLabel="defaultStyle.css" index="8">
+<position info="not_deleted" x="1308" y="0"/>
+</item>
+<item historyLabel="index.html" index="3">
+<position info="not_deleted" x="4168" y="0"/>
+</item>
+<item historyLabel="defaultStyle.css" index="8">
+<position info="not_deleted" x="1338" y="0"/>
+</item>
+<item active="true" historyLabel="index.html" index="3">
+<position info="not_deleted" x="4168" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
