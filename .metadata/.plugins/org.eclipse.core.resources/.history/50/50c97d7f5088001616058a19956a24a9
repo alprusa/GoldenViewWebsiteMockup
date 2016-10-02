@@ -19,14 +19,6 @@
 		
 		<link href="../defaultStyle.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-		
-		<style>
-			#aboutImg{
-				padding-top: 5px;
-				margin: 0 auto;
-				float: center;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -61,7 +53,7 @@
              
  			<!--Main text field-->
  			<div id="containerText">
- 				 <img src = "../img/Lompoc.JPG" width="560" height="140" alt="Solvang" id="aboutImg" class="img-responsive">
+ 				 <img src = "../img/Lompoc.JPG" width="560" height="140" alt="Solvang" class="img-responsive" style="padding-top: 2px; margin: 0 auto; float: center;">
  				 
 	 			<!--Services text section 1-->
 	 			<div>

@@ -71,6 +71,7 @@ a:focus{
 /*carousel css content8*/
 .carousel-control{
     margin: 0 auto;
+
 }
 
 .carouselItems{

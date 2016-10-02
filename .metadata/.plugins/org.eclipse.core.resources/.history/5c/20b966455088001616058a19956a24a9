@@ -27,7 +27,7 @@ mark{
     text-align: center;
     float:center;
     color: #901389;
-    margin: 0 auto !important;
+    margin: auto !important;
 }
 
 .navbar .navbar-nav {
@@ -69,8 +69,13 @@ a:focus{
 }
 
 /*carousel css content8*/
+#thecarousel{
+    margin-top: 1%;
+}
+
 .carousel-control{
     margin: 0 auto;
+
 }
 
 .carouselItems{
