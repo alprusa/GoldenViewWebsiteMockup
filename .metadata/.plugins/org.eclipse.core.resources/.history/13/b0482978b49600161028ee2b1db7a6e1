@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Golden View Senior Services</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alisa Prusa">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<link href="defaultStyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	</head>
+
+	<body>
+		<div id="mainNav">
+			<!--Navbar html section-->
+			<nav class="navbar navbar-static-top" role="navigation">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <!--Logo image button to go make to main page-->
+                        <a href="#"><img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/></a>
+
+                        <!--Button that is created for menu when screen size reaches a certain limit-->
+                        <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!--Buttons to go to different pages of the website-->
+                    <div class="collapse navbar-collapse" id="navItems">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+							<li><a href="services/">Services</a></li>
+							<li><a href="about/">About Us</a></li>
+							<li><a href="contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </nav>
+             
+             <!--carousel html section-->
+             <div id="containerContent">
+                <!--Setup the Carousel slides to be able to assign the images/videos to a slide index-->
+                <div id="thecarousel" class="carousel slide" data-ride="carousel">
+                    <ol class = "carousel-indicators">
+                        <li data-target = "#thecarousel" data-slide-to = "0" class = "active"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "1"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "2"></li>
+                    </ol>
+
+                <!--Adding the content images/videos to the Carousel slide-->
+                <div class="carousel-inner" role="listbox">
+                    <!--Image slide index 0 the Forest Biome mockup image-->
+                    <div class="item active">
+                        <img src="img/PatientCareCartoonized.png" alt="Lompoc" class="carouselItems img-responsive">
+                        <div class="carousel-caption">
+                            <h3 class="carouselText">Lompoc</h3>
+                        </div>
+                    </div>
+
+                    <!--Image slide index 1 the avatar spritesheet-->
+                    <div class="item">
+                        <img src="img/PatientCareCartoonized.png" alt="Buelton" class="carouselItems img-responsive">
+                        <div class="carousel-caption">
+                            <h3 class="carouselText">Buellton</h3>
+                        </div>
+                    </div>
+
+                    <!--Video slide index 2 the core release video-->
+                    <div class="item">
+                        <img src="img/PatientCareCartoonized.png" alt="Solvang" class="carouselItems img-responsive">
+                        <div class="carousel-caption">
+                            <h3 class="carouselText">Solvang</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Adding a previous arrow button to look at the previous Carousel slides-->
+                <a class="carousel-control left" href = "#thecarousel" role="button" data-slide = "prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <!--Adding a next arrow button to look at the next Carousel slides-->
+                <a class="carousel-control right" href = "#thecarousel" role="button" data-slide = "next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+			</div>
+			
+			<!--Body Text-->
+			<h3 style="text-align: center;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
+			
+			<!--Read more info direction sections-->
+			<div id="columnData" class="row">
+			    <div class="dataList spaceList col-sm-4">
+			    	<h4>Services</h4>
+			    	<p>Service designed to allow seniors to stay where they desire, in their own homes. With personal care,
+			    		meal preparation, and house keeping. With 1 to 24 hours available per day.
+			    		<br>
+			    		<a href="services/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			    <div class="dataList spaceList col-sm-4">
+			    	<h4>Benefits</h4>
+			    	<p>We provide one on one care, allowing you to maintain control of you. With living at home there are no
+			    		strict rules of visitation as with facilities. Your individual needs will be addressed as we know
+			    		not everyone is the same.
+			    		<br><br>
+			    		<a href="services/#Benefits/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			     <div class="spaceList col-sm-4">
+			     	<h4>Why Age Alone?</h4>
+			    	<p>It's time to call Golden View Senior Services when you answer yes to one or more of several questions.
+			    		<br><br>Does my going to appointments, or shopping depend on the kindness of a neighbor or friend?
+			    		<br><br>
+			    		<a href="whyagealone/"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			</div> 
+
+			<!--Footer section-->
+             <footer id="footer" class="row">
+				<p style="text-align: center;">
+					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
+				</p>
+			</footer>
+        </div>
+
+		<script src="jquery-1.2.0.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    	<script src="js/CssChanger.js"></script>
+	</body>
+</html>

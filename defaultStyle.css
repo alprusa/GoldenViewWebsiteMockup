@@ -76,6 +76,8 @@ a:focus{
 .carouselItems{
     margin: 0 auto;
     float:  center;
+    width: 400px;
+    height: 140px;
 }
 
 .carouselText{
@@ -100,6 +102,10 @@ a:focus{
 	padding-right: 3px;
 }
 
+.readMore{
+	padding: 0;
+}
+
 #containerText{
 	margin: 0 auto;
 	float:center;
@@ -112,4 +118,11 @@ a:focus{
 	margin: 0 auto;
 	background-color:#FFFFFF;
 	border-top: 2px #ffdf27 solid;
+}
+
+@media (max-width: 600px){
+	.carouselItems{
+		width: 200px;
+    	height: 70px;
+	}
 }
