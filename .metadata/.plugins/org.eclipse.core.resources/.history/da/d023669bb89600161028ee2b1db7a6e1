@@ -86,7 +86,6 @@ a:focus{
 
 .carouselText{
 	color: #ffdf27;
-	border: none;
 }
 
 /*three column text*/

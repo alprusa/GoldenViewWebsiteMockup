@@ -82,11 +82,11 @@ a:focus{
     float:  center;
     width: 400px;
     height: 140px;
+    border: none;
 }
 
 .carouselText{
 	color: #ffdf27;
-	border: none;
 }
 
 /*three column text*/
