@@ -2,14 +2,8 @@ body{
 	color: white;
 }
 
-h3{
-	text-decoration: underline;
-	text-decoration-color: #ffdf27;
-}
-
 h4{
-	text-decoration: underline;
-	text-decoration-color: #ffdf27;
+	border-bottom: 2px #ffdf27 black;
 }
 
 a{
