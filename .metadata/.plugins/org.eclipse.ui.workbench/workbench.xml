@@ -17,6 +17,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="70" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="com.aptana.editor.php" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.text" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.css" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -38,21 +39,21 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.aptana.editor.html" name="index.html" partName="index.html" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/index.html" title="index.html" tooltip="GoldenViewWebsite/index.html" workbook="DefaultEditorWorkbook">
+<editor id="com.aptana.editor.html" name="index.html" partName="index.html | GoldenViewWebsite" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/index.html" title="index.html | GoldenViewWebsite" tooltip="GoldenViewWebsite/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1685" selectionTopPixel="461"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3158" selectionTopPixel="232"/>
 </editor>
 <editor id="com.aptana.editor.css" name="defaultStyle.css" partName="defaultStyle.css" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/defaultStyle.css" title="defaultStyle.css" tooltip="GoldenViewWebsite/defaultStyle.css" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/defaultStyle.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1338" selectionTopPixel="960"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1155" selectionTopPixel="682"/>
 </editor>
 <editor id="com.aptana.editor.html" name="index.html" partName="index.html | services" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/services/index.html" title="index.html | services" tooltip="GoldenViewWebsite/services/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/services/index.html"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3817" selectionTopPixel="1002"/>
 </editor>
-<editor id="com.aptana.editor.html" name="index.html" partName="index.html | about" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/about/index.html" title="index.html | about" tooltip="GoldenViewWebsite/about/index.html" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.aptana.editor.html" name="index.html" partName="index.html | about" path="/Users/alisaprusa/Documents/GoldenViewWebsiteMockup/GoldenViewWebsite/about/index.html" title="index.html | about" tooltip="GoldenViewWebsite/about/index.html" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GoldenViewWebsite/about/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3662" selectionTopPixel="765"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2437" selectionTopPixel="536"/>
 </editor>
 </editors>
 <views>
@@ -64,6 +65,9 @@
 <view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (100 of 1176 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -86,7 +90,7 @@
 <element path="/GoldenViewWebsite/whyagealone"/>
 </expanded>
 <selection>
-<element path="/GoldenViewWebsite/whyagealone/index.html"/>
+<element path="/GoldenViewWebsite/about/index.html"/>
 </selection>
 </project>
 </viewState>
@@ -200,63 +204,25 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/contact/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/GoldenViewWebsite/js/googleMap.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/GoldenViewWebsite/contact/contactStyle.css"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/GoldenViewWebsite/defaultStyle.css"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/services/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/about/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/whyagealone/index.html"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/GoldenViewWebsite/defaultStyle.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/about/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" path="/GoldenViewWebsite/contact/index.php"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/GoldenViewWebsite/contact/index.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/GoldenViewWebsite/defaultStyle.css"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" path="/GoldenViewWebsite/contact/contactStyle.css"/>
 </editors>
-<item historyLabel="googleMap.js" index="1">
-<position info="not_deleted" x="1320" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="googleMap.js" index="1">
-<position info="not_deleted" x="3117" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="contactStyle.css" index="2">
-<position info="not_deleted" x="718" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="contactStyle.css" index="2">
-<position info="not_deleted" x="718" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="contactStyle.css" index="2">
-<position info="not_deleted" x="1254" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="contactStyle.css" index="2">
-<position info="not_deleted" x="1216" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="googleMap.js" index="1">
-<position info="not_deleted" x="3631" y="0"/>
-</item>
-<item historyLabel="index.html | contact" index="0">
-<position/>
-</item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="3905" y="0"/>
 </item>
-<item historyLabel="defaultStyle.css" index="4">
+<item historyLabel="defaultStyle.css" index="3">
 <position info="not_deleted" x="165" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="5839" y="0"/>
 </item>
 <item historyLabel="googleMap.js" index="1">
@@ -268,95 +234,137 @@
 <item historyLabel="googleMap.js" index="1">
 <position info="not_deleted" x="3631" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="5839" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="5870" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position info="not_deleted" x="3868" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="5927" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position info="not_deleted" x="5037" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="5971" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position info="not_deleted" x="5037" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position/>
 </item>
-<item historyLabel="index.html | about" index="6">
+<item historyLabel="index.html | about" index="5">
 <position info="not_deleted" x="3662" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="6520" y="0"/>
 </item>
-<item historyLabel="index.html | whyagealone" index="7">
+<item historyLabel="index.html | whyagealone" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="index.html | whyagealone" index="7">
+<item historyLabel="index.html | whyagealone" index="6">
 <position info="not_deleted" x="4179" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="6307" y="0"/>
 </item>
 <item historyLabel="index.html | contact" index="0">
 <position info="not_deleted" x="2823" y="0"/>
 </item>
-<item historyLabel="index.html | whyagealone" index="7">
+<item historyLabel="index.html | whyagealone" index="6">
 <position info="not_deleted" x="2349" y="0"/>
 </item>
 <item historyLabel="index.html | contact" index="0">
 <position info="not_deleted" x="2823" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="6307" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position info="not_deleted" x="5503" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="1037" y="0"/>
 </item>
-<item historyLabel="defaultStyle.css" index="4">
+<item historyLabel="defaultStyle.css" index="3">
 <position info="not_deleted" x="1073" y="0"/>
 </item>
-<item historyLabel="index.html | GoldenViewWebsite" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="5870" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position info="not_deleted" x="3854" y="0"/>
 </item>
-<item historyLabel="defaultStyle.css" index="4">
+<item historyLabel="defaultStyle.css" index="3">
 <position info="not_deleted" x="1140" y="0"/>
 </item>
-<item historyLabel="index.html | services" index="5">
+<item historyLabel="index.html | services" index="4">
 <position info="not_deleted" x="3817" y="0"/>
 </item>
-<item historyLabel="index.html" index="3">
+<item historyLabel="index.html" index="2">
 <position info="not_deleted" x="5870" y="0"/>
 </item>
-<item historyLabel="defaultStyle.css" index="8">
+<item historyLabel="defaultStyle.css" index="7">
 <position info="not_deleted" x="1308" y="0"/>
 </item>
-<item historyLabel="index.html" index="3">
+<item historyLabel="index.html" index="2">
 <position info="not_deleted" x="4168" y="0"/>
 </item>
-<item historyLabel="defaultStyle.css" index="8">
+<item historyLabel="defaultStyle.css" index="7">
 <position info="not_deleted" x="1338" y="0"/>
 </item>
-<item active="true" historyLabel="index.html" index="3">
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
 <position info="not_deleted" x="4168" y="0"/>
+</item>
+<item historyLabel="index.html | about" index="8">
+<position info="not_deleted" x="2399" y="0"/>
+</item>
+<item historyLabel="index.php" index="9">
+<position info="not_deleted" x="2823" y="0"/>
+</item>
+<item historyLabel="index.html | about" index="8">
+<position info="not_deleted" x="2399" y="0"/>
+</item>
+<item historyLabel="index.html | contact" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html | about" index="8">
+<position info="not_deleted" x="2399" y="0"/>
+</item>
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
+<position info="not_deleted" x="1685" y="0"/>
+</item>
+<item historyLabel="defaultStyle.css" index="11">
+<position info="not_deleted" x="423" y="0"/>
+</item>
+<item historyLabel="index.html | GoldenViewWebsite" index="2">
+<position info="not_deleted" x="3158" y="0"/>
+</item>
+<item historyLabel="defaultStyle.css" index="11">
+<position info="not_deleted" x="1155" y="0"/>
+</item>
+<item historyLabel="index.html | about" index="8">
+<position/>
+</item>
+<item historyLabel="contactStyle.css" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="index.html | about" index="8">
+<position info="not_deleted" x="2474" y="0"/>
+</item>
+<item historyLabel="contactStyle.css" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="index.html | about" index="8">
+<position info="not_deleted" x="2474" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -375,8 +383,14 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="contactStyle.css" tooltip="GoldenViewWebsite/contact/contactStyle.css">
+<persistable path="/GoldenViewWebsite/contact/contactStyle.css"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="GoldenViewWebsite/contact/index.html">
 <persistable path="/GoldenViewWebsite/contact/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="index.php" tooltip="GoldenViewWebsite/contact/index.php">
+<persistable path="/GoldenViewWebsite/contact/index.php"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="GoldenViewWebsite/whyagealone/index.html">
 <persistable path="/GoldenViewWebsite/whyagealone/index.html"/>
@@ -389,9 +403,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.text" name="directions.txt" tooltip="GoldenViewWebsite/contact/directions.txt">
 <persistable path="/GoldenViewWebsite/contact/directions.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="contactStyle.css" tooltip="GoldenViewWebsite/contact/contactStyle.css">
-<persistable path="/GoldenViewWebsite/contact/contactStyle.css"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="googleMap.js" tooltip="GoldenViewWebsite/js/googleMap.js">
 <persistable path="/GoldenViewWebsite/js/googleMap.js"/>

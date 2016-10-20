@@ -32,7 +32,7 @@
                         <a href="#"><img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/></a>
 
                         <!--Button that is created for menu when screen size reaches a certain limit-->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -65,7 +65,7 @@
                 <div class="carousel-inner" role="listbox">
                     <!--Image slide index 0 the Forest Biome mockup image-->
                     <div class="item active">
-                        <img src = "img/PatientCareCartoonized.png" width="400" height="140" alt="Lompoc" class="carouselItems img-responsive">
+                        <img src="img/PatientCareCartoonized.png" alt="Lompoc" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3 class="carouselText">Lompoc</h3>
                         </div>
@@ -73,7 +73,7 @@
 
                     <!--Image slide index 1 the avatar spritesheet-->
                     <div class="item">
-                        <img src = "img/PatientCareCartoonized.png" width="400" height="140" alt="Buelton" class="carouselItems img-responsive">
+                        <img src="img/PatientCareCartoonized.png" alt="Buelton" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3 class="carouselText">Buellton</h3>
                         </div>
@@ -81,7 +81,7 @@
 
                     <!--Video slide index 2 the core release video-->
                     <div class="item">
-                        <img src = "img/PatientCareCartoonized.png" width="400" height="140" alt="Solvang" class="carouselItems img-responsive">
+                        <img src="img/PatientCareCartoonized.png" alt="Solvang" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3 class="carouselText">Solvang</h3>
                         </div>
@@ -106,30 +106,36 @@
 			<h3 style="text-align: center;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
 			
 			<!--Read more info direction sections-->
-			<table id="columnData">
-			    <td class="dataList spaceList">
+			<div id="columnData" class="row">
+			    <div class="dataList spaceList col-sm-4">
 			    	<h4>Services</h4>
 			    	<p>Service designed to allow seniors to stay where they desire, in their own homes. With personal care,
-			    		meal preparation, and house keeping. With 1 to 24 hours available per day.</p>
-			    	<a href="services/" class="pull-right"><mark>read more</mark></a>
-			    </td>
-			    <td class="dataList spaceList">
+			    		meal preparation, and house keeping. With 1 to 24 hours available per day.
+			    		<br><br>
+			    		<a href="services/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			    <div class="dataList spaceList col-sm-4">
 			    	<h4>Benefits</h4>
 			    	<p>We provide one on one care, allowing you to maintain control of you. With living at home there are no
 			    		strict rules of visitation as with facilities. Your individual needs will be addressed as we know
-			    		not everyone is the same.</p>
-			    	<a href="services/#Benefits/" class="pull-right"><mark>read more</mark></a>
-			    </td>
-			     <td class="spaceList">
+			    		not everyone is the same.
+			    		<br><br>
+			    		<a href="services/#Benefits/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			     <div class="spaceList col-sm-4">
 			     	<h4>Why Age Alone?</h4>
 			    	<p>It's time to call Golden View Senior Services when you answer yes to one or more of several questions.
-			    		<br><br>Does my going to appointments, or shopping depend on the kindness of a neighbor or friend?</p>
-			    	<a href="whyagealone/" class="pull-right"><mark>read more</mark></a>
-			    </td>
-			</table> 
+			    		<br><br>Does my going to appointments, or shopping depend on the kindness of a neighbor or friend?
+			    		<br><br>
+			    		<a href="whyagealone/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			</div> 
 
 			<!--Footer section-->
-             <footer id="footer">
+             <footer id="footer" class="row">
 				<p style="text-align: center;">
 					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
 				</p>
@@ -138,5 +144,6 @@
 
 		<script src="jquery-1.2.0.js"></script>
     	<script src="bootstrap/js/bootstrap.min.js"></script>
+    	<script src="js/CssChanger.js"></script>
 	</body>
 </html>
