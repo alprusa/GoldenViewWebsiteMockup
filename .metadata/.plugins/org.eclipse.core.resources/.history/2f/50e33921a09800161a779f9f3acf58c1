@@ -1,3 +1,39 @@
+<?php
+	if (isset($_POST["submit"])) {
+        $Name = $_POST['Name'];
+		$email = $_POST['email'];
+        $Subject = $_POST['Subject'];
+		$Message = $_POST['Message'];
+		$to = 'contact@homemaidcleaningservice.net';
+		
+		$body = "From: $Name\nE-Mail: $email\nSubject: $Subject\nMessage:\n $Message";
+ 
+		// Check if subject has been entered
+		if (!$_POST['Subject']) {
+			$errSubject = 'Please enter a subject';
+		}
+		
+		// Check if email has been entered and is valid
+		if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address';
+		}
+		
+		//Check if message has been entered
+		if (!$_POST['Message']) {
+			$errMessage = 'Please enter your message';
+		}
+ 
+        // If there are no errors, send the email
+        if (!$errSubject && !$errEmail && !$errMessage) {
+            if (mail ($to, $Subject, $body, $email)) {
+                $result='<p class="text-success">Thank You! We will be in touch</p>';
+            } else {
+                $result='<p class="text-danger">Sorry there was an error sending your message. Please try again later</p>';
+            }
+        }
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -106,7 +142,7 @@
 						<input type="text" class="formBox" name="Subject" id="Subject" placeholder="Subject" required><br>
 						<textarea type="text" class="formBox" name="Message" rows=6 id="Message" placeholder="Your Message" required></textarea>
 						<input id="submitButton" class="gVButton" type="submit" name="submit" value="Send" style="margin-top: 5px;">
-	                    <!--<?php echo "$result";?>-->
+	                    <?php echo "$result";?>
 		 			</form>
 		 			
 		 			

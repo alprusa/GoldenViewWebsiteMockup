@@ -8,11 +8,6 @@ form{
 	width: 142px;
 }
 
-textarea {
-   resize: none;
-   margin: auto;
-}
-
 #googleMap{
 	margin: 0 auto;
 	width:500px;
@@ -99,17 +94,15 @@ input[type=text]{
 	}
 }
 
-@media (max-width: 1200px) {
-	form{
-		margin: 0 auto;
-	}
-}
-
 
 @media (max-width: 700px) {
 	#googleMap{
 		margin: 0 auto;
 		width:300px;
 		height:180px;
+	}
+	
+	form{
+		margin: 0 auto;
 	}
 }

@@ -1,16 +1,5 @@
-form{
-	width: 150px;
-	padding-bottom: 5px;
-}
-
 .formBox{
 	margin: auto;
-	width: 142px;
-}
-
-textarea {
-   resize: none;
-   margin: auto;
 }
 
 #googleMap{
@@ -23,11 +12,6 @@ textarea {
 	padding-top: 5px;
 	text-align: center;
 	margin: 0 auto;
-}
-
-#directionInput{
-	padding-right:5px;
-	padding-bottom: 10px;
 }
 
 .gVButton{
@@ -90,7 +74,7 @@ input[type=text]{
 	}
 	
 	#directionInput{
-		float: right;
+		float right;
 	}
 	
 	#containerText{
@@ -99,14 +83,12 @@ input[type=text]{
 	}
 }
 
-@media (max-width: 1200px) {
-	form{
-		margin: 0 auto;
-	}
-}
-
 
 @media (max-width: 700px) {
+	#containerText{
+		height: 500px;
+	}
+	
 	#googleMap{
 		margin: 0 auto;
 		width:300px;
