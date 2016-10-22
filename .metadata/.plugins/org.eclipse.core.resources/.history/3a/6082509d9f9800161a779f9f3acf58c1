@@ -8,11 +8,6 @@ form{
 	width: 142px;
 }
 
-textarea {
-   resize: none;
-   margin: auto;
-}
-
 #googleMap{
 	margin: 0 auto;
 	width:500px;

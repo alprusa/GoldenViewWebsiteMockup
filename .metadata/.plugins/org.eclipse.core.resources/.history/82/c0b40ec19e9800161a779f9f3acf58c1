@@ -1,16 +1,5 @@
-form{
-	width: 150px;
-	padding-bottom: 5px;
-}
-
 .formBox{
 	margin: auto;
-	width: 142px;
-}
-
-textarea {
-   resize: none;
-   margin: auto;
 }
 
 #googleMap{
@@ -96,12 +85,6 @@ input[type=text]{
 	#containerText{
 		text-align: left;
 		height: 400px;
-	}
-}
-
-@media (max-width: 1200px) {
-	form{
-		margin: 0 auto;
 	}
 }
 
