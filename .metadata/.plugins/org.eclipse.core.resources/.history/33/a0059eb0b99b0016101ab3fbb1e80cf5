@@ -12,16 +12,8 @@ a{
 	color: #ffdf27 !important;
 }
 
-/*make it so the logo home page button does not have the hover effect that the other buttons have*/
-a:hover,
-a:focus{
-    text-decoration: underline !important;
-	color:#ffdf27 !important;
-	text-decoration-color: #ffdf27 !important;
-}
-
 mark{
-	background-color: #535353 !important;
+	
 	color: #ffdf27 !important;
 }
 
@@ -63,14 +55,18 @@ nav{
   border-color: #ffdf27 !important;
 }
 
+/*make it so the logo home page button does not have the hover effect that the other buttons have*/
+a:hover,
+a:focus{
+    text-decoration: underline !important;
+	color:#ffdf27 !important;
+	background-color: #535353 !important;
+	text-decoration-color: #ffdf27 !important;
+}
+
 /*content inside the navigation bar*/
 #navItems{
     padding-top: 20px;
-}
-
-#navItems a:hover,
-#navItems a:focus{
-    background-color: #535353 !important;
 }
 
 #logo{

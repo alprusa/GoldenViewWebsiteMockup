@@ -20,6 +20,11 @@ a:focus{
 	text-decoration-color: #ffdf27 !important;
 }
 
+a navItems:hover,
+a navItems:focus{
+    background-color: #535353 !important;
+}
+
 mark{
 	background-color: #535353 !important;
 	color: #ffdf27 !important;
@@ -66,11 +71,6 @@ nav{
 /*content inside the navigation bar*/
 #navItems{
     padding-top: 20px;
-}
-
-#navItems a:hover,
-#navItems a:focus{
-    background-color: #535353 !important;
 }
 
 #logo{
