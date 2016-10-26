@@ -1,0 +1,34 @@
+#swooshSmall{
+	width: 200px;
+	height: 200px;
+}
+
+#lastSwoosh{
+	bottom: 4%;
+	transform: rotate(250deg);
+	opacity: 40%;
+}
+
+#swoosh2{
+	transform: rotate(90deg);
+	right:0;
+	top: 0;
+}
+
+#bottomSwoosh2{
+	transform: rotate(180deg);
+	right:0;
+	top: 20%;
+}
+
+@media (max-width: 770px){
+	#lastSwoosh{
+		top: 90%;
+	}
+}
+
+@media (max-width: 300px){
+	#swooshSmall{
+		opacity: 0;
+	}
+}

@@ -19,6 +19,15 @@
 		
 		<link href="../defaultStyle.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		
+		<style>
+			#SwooshDiv{
+				margin: 0 auto;
+				background-image: url("../img/SwooshesUpsideDown.svg");
+				background-repeat: repeat-x;
+				background-position: 5% 100%;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -52,6 +61,7 @@
              </nav>
              
  			<!--Main text field-->
+ 			<div id="SwooshDiv">
  			<div id="containerText">
 	 			<!--Services text section 1-->
 	 			<div>
@@ -101,10 +111,21 @@
 		 			</div>
 	 			</div>
  			</div>
+ 			</div>
+ 			
+ 			<!--Buttons to go to different pages of the website-->
+            <div>
+                <ul id="navFooter">
+                    <li><a href="../">Home</a></li>
+					<li><a href="../services/">Services</a></li>
+					<li><a href="../about/">About Us</a></li>
+					<li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
  			
 			<!--Footer section-->
              <footer id="footer">
-				<p style="text-align: center;">
+				<p>
 					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
 				</p>
 			</footer>

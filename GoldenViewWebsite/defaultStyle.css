@@ -18,6 +18,9 @@ mark{
 }
 
 /*navigation bar css content*/
+nav{
+	border-bottom: 2px #ffdf27 solid !important;
+}
 
 #mainNav{
     top: 1%;
@@ -58,7 +61,7 @@ a:focus{
     text-decoration: underline !important;
 	color:#ffdf27 !important;
 	background-color: #535353 !important;
-	text-decoration-color:#ffdf27 !important;
+	text-decoration-color: #ffdf27 !important;
 }
 
 /*content inside the navigation bar*/
@@ -107,27 +110,78 @@ a:focus{
 	padding-right: 3px;
 }
 
-.readMore{
-	padding: 0;
-}
-
 #containerText{
 	margin: 0 auto;
 	float:center;
 	width: 80%;
 }
 
+.swoosh{
+    position: absolute; /* Stay in place */
+    z-index: -1000; /* Sit on bottom */
+   	opacity: 0.7;
+}
+
+#bottomSwoosh{
+	transform: rotate(180deg);
+	right:0;
+	margin-top: 300px;
+}
+
 /*footer content*/
 #footer{
-	height: 60px;
 	margin: 0 auto;
 	background-color:#FFFFFF;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5px;
+}
+
+#navFooter{
+	margin: 0 auto;
+	background-color: #535353 !important;
+	list-style-type: none;
+	text-align: center;
 	border-top: 2px #ffdf27 solid;
+	border-bottom: 2px #ffdf27 solid;
+	padding-right: 8%;
+}
+
+#navFooter li{
+	margin: auto;
+	display: inline;
+	padding: 8px;
+}
+
+#logoBottom{
+	margin: auto;
+    width: 100px;
+    border: 2px #ffdf27 solid;
+}
+
+@media (min-width: 1300px){
+	#bottomSwoosh{
+		top: 20%;
+		margin-top: 200px;
+	}
+}
+
+@media (min-width: 770px){
+	#bottomSwoosh{
+		top: 40%;
+	}
 }
 
 @media (max-width: 600px){
 	.carouselItems{
 		width: 200px;
     	height: 70px;
+	}
+}
+
+@media (max-width: 400px){
+	.swoosh{
+	    width: 50%;
+	    height: 50%;
 	}
 }

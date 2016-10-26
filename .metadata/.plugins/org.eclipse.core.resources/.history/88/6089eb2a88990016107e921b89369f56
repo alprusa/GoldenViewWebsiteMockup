@@ -1,0 +1,191 @@
+body{
+	color: white;
+}
+
+h3{
+	border-bottom: 2px solid #ffdf27;
+}
+
+a{
+	margin: 0 auto;
+	font-size: 18px;
+	color: #ffdf27 !important;
+}
+
+mark{
+	background-color: #535353 !important;
+	color: #ffdf27 !important;
+}
+
+/*navigation bar css content*/
+nav{
+	border-bottom: 2px #ffdf27 solid !important;
+}
+
+#mainNav{
+    top: 1%;
+    width: 100%;
+    height: 50px;
+    float:center;
+}
+
+.navbar{
+    background-color: #535353 !important;
+    text-align: center;
+    float:center;
+    color: #901389;
+    margin: 0 auto !important;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar .navbar-toggle .icon-bar{
+  background-color: #ffdf27 !important;
+}
+
+.navbar .navbar-toggle{
+  border-color: #ffdf27 !important;
+}
+
+/*make it so the logo home page button does not have the hover effect that the other buttons have*/
+a:hover,
+a:focus{
+    text-decoration: underline !important;
+	color:#ffdf27 !important;
+	background-color: #535353 !important;
+	text-decoration-color:#ffdf27 !important;
+}
+
+/*content inside the navigation bar*/
+#navItems{
+    padding-top: 20px;
+}
+
+#logo{
+	margin: 0 auto;
+    width:200px;
+    border: 2px #ffdf27 solid;
+}
+
+/*carousel css content8*/
+.carousel-control{
+    margin: 0 auto;
+}
+
+.carouselItems{
+    margin: 0 auto;
+    float:  center;
+    width: 400px;
+    height: 140px;
+}
+
+.carouselText{
+	color: #ffdf27;
+	border: none;
+}
+
+/*three column text*/
+#columnData{
+	margin: 0 auto;
+    float:  center;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.dataList{
+	border-right: 2px #ffdf27 solid;
+}
+
+.spaceList{
+	margin: 0 auto;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.readMore{
+	padding: 0;
+}
+
+#containerText{
+	margin: 0 auto;
+	float:center;
+	width: 80%;
+}
+
+.swoosh{
+    position: absolute; /* Stay in place */
+    z-index: -1000; /* Sit on bottom */
+}
+
+#bottomSwoosh{
+	transform: rotate(180deg);
+	right:0;
+	margin-top: 300px;
+}
+
+/*footer content*/
+#footer{
+	height: 60px;
+	margin: 0 auto;
+	background-color:#FFFFFF;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5px;
+}
+
+#navFooter{
+	margin: auto;
+	background-color: #535353 !important;
+	list-style-type: none;
+	text-align: center;
+	border-top: 2px #ffdf27 solid;
+	border-bottom: 2px #ffdf27 solid;
+	padding-right: 8%;
+}
+
+#navFooter li{
+	margin: auto;
+	display: inline;
+	padding: 8px;
+}
+
+#logoBottom{
+	margin: auto;
+    width: 100px;
+    border: 2px #ffdf27 solid;
+}
+
+@media (min-width: 800px){
+	#bottomSwoosh{
+		top: 0px;
+		margin-top: 200px;
+	}
+}
+
+@media (min-width: 600px){
+	#bottomSwoosh{
+		margin-top: 200px;
+	}
+}
+
+@media (max-width: 600px){
+	.carouselItems{
+		width: 200px;
+    	height: 70px;
+	}
+}
+
+@media (max-width: 400px){
+	.swoosh{
+	    width: 20%;
+	    height: 20%;
+	}
+}

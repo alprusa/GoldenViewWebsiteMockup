@@ -19,6 +19,16 @@
 		
 		<link href="../defaultStyle.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		
+		<!--Style to set the swooshes background image-->
+		<style>
+			#SwooshDiv{
+				margin: 0 auto;
+				background-image: url("../img/Swooshes.svg");
+				background-repeat: repeat-x;
+				background-position: 5% 100%; 
+			}
+		</style>
 	</head>
 
 	<body>
@@ -29,7 +39,10 @@
 
                     <div class="navbar-header">
                         <!--Logo image button to go make to main page-->
-                        <a href="../"><img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/></a>
+                        <a href="../">
+                        	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+                        	<p style="text-align: center; margin: auto;">Bonded and Insured</p>
+                        </a>
 
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,13 +56,15 @@
                     <div class="collapse navbar-collapse" id="navItems">
                         <ul class="nav navbar-nav">
                             <li><a href="../">Home</a></li>
-							<li><a href="../services/">Services</a></li>
+							<li><a href="./">Services</a></li>
 							<li><a href="../about/">About Us</a></li>
 							<li><a href="../contact/">Contact</a></li>
                         </ul>
                     </div>
                 </div>
              </nav>
+             
+             <div id="SwooshDiv">
              
  			<!--Main text field-->
  			<div id="containerText">
@@ -105,6 +120,8 @@
 	 					about cleaning up our care givers will take care of the clean up of your meals.</p>
 	 			</div>
 	 			
+	 		
+	 			
 	 			<!--Services text section 4-->
 	 			<div>
 	 				<h3>House Keeping</h3>
@@ -112,10 +129,22 @@
 	 					the laundry, and any other light cleaning needed around your home.</p>
 	 			</div>
  			</div>
+ 			</div>
+ 			
+ 			
+ 			<!--Buttons to go to different pages of the website-->
+            <div>
+                <ul id="navFooter">
+                    <li><a href="../">Home</a></li>
+					<li><a href="./">Services</a></li>
+					<li><a href="../about/">About Us</a></li>
+					<li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
  			
 			<!--Footer section-->
              <footer id="footer">
-				<p style="text-align: center;">
+				<p>
 					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
 				</p>
 			</footer>

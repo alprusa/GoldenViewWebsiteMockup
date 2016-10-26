@@ -66,7 +66,10 @@
 
                     <div class="navbar-header">
                         <!--Logo image button to go make to main page-->
-                        <a href="../"><img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/></a>
+                        <a href="../">
+                        	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+                        	<img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+                        </a>
 
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -82,13 +85,14 @@
                             <li><a href="../">Home</a></li>
 							<li><a href="../services/">Services</a></li>
 							<li><a href="../about/">About Us</a></li>
-							<li><a href="../contact/">Contact</a></li>
+							<li><a href="./">Contact</a></li>
                         </ul>
                     </div>
                 </div>
              </nav>
              
  			<!--Main text field-->
+ 			<div id="SwooshDiv">
  			<div id="containerText">
  				<!--Google Map for directions-->
 	 			<div id="googleMap"></div>
@@ -148,10 +152,21 @@
 		 			
 	 			</div>
  			</div>
+ 			</div>
+ 			
+ 			<!--Buttons to go to different pages of the website-->
+            <div>
+                <ul id="navFooter">
+                    <li><a href="../">Home</a></li>
+					<li><a href="../services/">Services</a></li>
+					<li><a href="../about/">About Us</a></li>
+					<li><a href="./">Contact</a></li>
+                </ul>
+            </div>
  			
 			<!--Footer section-->
              <footer id="footer">
-				<p style="text-align: center;">
+				<p>
 					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
 				</p>
 			</footer>
