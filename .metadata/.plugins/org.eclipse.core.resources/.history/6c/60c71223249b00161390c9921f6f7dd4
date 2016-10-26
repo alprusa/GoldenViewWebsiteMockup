@@ -1,0 +1,52 @@
+#swooshSmall{
+	width: 200px;
+	height: 200px;
+}
+
+#lastSwoosh{
+	bottom: 7%;
+	transform: rotate(250deg);
+	opacity: 40%;
+}
+
+#swoosh2{
+	transform: rotate(90deg);
+	right:0;
+	top: 0;
+}
+
+#bottomSwoosh2{
+	transform: rotate(180deg);
+	right:0;
+	top: 20%;
+}
+
+@media (max-width: 1300px){
+	#lastSwoosh{
+		bottom: 3%;
+	}
+}
+
+@media (max-width: 1000px){
+	#lastSwoosh{
+		bottom: 0;
+	}
+}
+
+@media (max-width: 800px){
+	#lastSwoosh{
+		bottom: -30%;
+	}
+}
+
+@media (max-width: 300px){
+	#swooshSmall{
+		opacity: 60;
+	}
+}
+
+@media (min-width: 300px){
+	#swooshSmall{
+		opacity: 1;
+	}
+}

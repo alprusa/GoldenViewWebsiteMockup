@@ -20,11 +20,18 @@
 		<link href="../defaultStyle.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 		
+		<!--Style to set the swooshes background image-->
 		<style>
 			#aboutImg{
 				padding-top: 5px;
 				margin: 0 auto;
 				float: center;
+			}
+			
+			#SwooshDiv{
+				margin: 0 auto;
+				background-image: url("../img/SwooshesUpsideDown.svg");
+				background-repeat: repeat-x;
 			}
 		</style>
 	</head>
@@ -37,7 +44,10 @@
 
                     <div class="navbar-header">
                         <!--Logo image button to go make to main page-->
-                        <a href="../"><img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/></a>
+                        <a href="../">
+                        	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+                        	<p style="text-align: center; margin: auto;">Bonded and Insured</p>
+                        </a>
 
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -52,7 +62,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="../">Home</a></li>
 							<li><a href="../services/">Services</a></li>
-							<li><a href="../about/">About Us</a></li>
+							<li><a href="./">About Us</a></li>
 							<li><a href="../contact/">Contact</a></li>
                         </ul>
                     </div>
@@ -60,6 +70,7 @@
              </nav>
              
  			<!--Main text field-->
+ 			<div id="SwooshDiv">
  			<div id="containerText">
  				 <img src = "../img/Lompoc.JPG" width="560" height="140" alt="Lompoc" id="aboutImg" class="img-responsive">
  				 
@@ -90,10 +101,21 @@
 	 					Priority</p>
 	 			</div>
  			</div>
+ 			</div>
+ 			
+ 			<!--Buttons to go to different pages of the website-->
+            <div>
+                <ul id="navFooter">
+                    <li><a href="../">Home</a></li>
+					<li><a href="../services/">Services</a></li>
+					<li><a href="./">About Us</a></li>
+					<li><a href="../contact/">Contact</a></li>
+                </ul>
+            </div>
  			
 			<!--Footer section-->
              <footer id="footer">
-				<p style="text-align: center;">
+				<p>
 					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
 				</p>
 			</footer>
