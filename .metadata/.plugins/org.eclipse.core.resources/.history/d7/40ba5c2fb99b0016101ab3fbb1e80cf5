@@ -23,9 +23,9 @@
 		<style>
 			#SwooshDiv{
 				margin: 0 auto;
-				background-image: url("img/SwooshesMain.svg");
+				background-image: url("../img/SwooshesUpsideDown.svg");
 				background-repeat: repeat-x;
-				background-size: 80% 100%
+				background-position: 5% 100%;
 			}
 		</style>
 	</head>
@@ -114,12 +114,12 @@
                 </div>
 			</div>
 			
-			
+			<img class="swoosh" src="img/BrochureSwoosh.png"/>
 			
 			<!--Body Text-->
 			<h3 style="text-align: center; border: none;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
 			
-			
+			<img class="swoosh" id="bottomSwoosh" src="img/BrochureSwoosh.png"/>
 			
 			<!--Read more info direction sections-->
 			<div id="SwooshDiv">

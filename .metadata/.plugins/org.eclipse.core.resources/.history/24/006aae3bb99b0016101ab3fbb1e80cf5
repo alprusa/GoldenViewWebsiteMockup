@@ -23,9 +23,9 @@
 		<style>
 			#SwooshDiv{
 				margin: 0 auto;
-				background-image: url("img/SwooshesMain.svg");
+				background-image: url("../img/SwooshesUpsideDown.svg");
 				background-repeat: repeat-x;
-				background-size: 80% 100%
+				background-position: 5% 100%;
 			}
 		</style>
 	</head>
