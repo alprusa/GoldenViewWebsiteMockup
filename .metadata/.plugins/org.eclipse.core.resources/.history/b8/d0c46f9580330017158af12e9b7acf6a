@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemap>
+	<tab>
+		<url>
+			<a href="http://www.goldenviewseniorservices.com/" title="Home - goldenviewseniorservices.com">Home - goldenviewseniorservices.com</a>
+		</url>
+		<url style="padding-left:10px;">
+			<a href="http://www.goldenviewseniorservices.com/whyagealone" title="WhyAgeAlone">Why Age Alone</a>
+		</url>
+	</tab>
+	<tab>
+		<url>
+			<a href="http://www.goldenviewseniorservices.com/services" title="Services">Services</a>
+		</url>
+	</tab>
+	<tab>
+		<url>
+			<a href="http://www.goldenviewseniorservices.com/about" title="About">About</a>
+		</url>
+	</tab>
+	<tab>
+		<url>
+			<a href="http://www.goldenviewseniorservices.com/contact" title="Contact">Contact</a>
+		</url>
+	</tab>
+</sitemap>

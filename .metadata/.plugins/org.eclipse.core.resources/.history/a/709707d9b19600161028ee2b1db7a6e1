@@ -1,7 +1,0 @@
-$(document).ready(function(){
-    $( window ).resize(function() {
-	    $(".dataList").css("border", "none");
-	    $(".dataList").css("border-bottom", "2px #ffdf27 solid");
-	    $(".dataList").css("padding-bottom", "5px");
-    });
-});

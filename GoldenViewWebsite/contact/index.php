@@ -4,7 +4,7 @@
 		$email = $_POST['email'];
         $Subject = $_POST['Subject'];
 		$Message = $_POST['Message'];
-		$to = 'goldenviewseniorservices@yahoo.com';
+		$to = 'operations@goldenviewseniorservices.com';
 		
 		$body = "From: $Name\nE-Mail: $email\nSubject: $Subject\nMessage:\n $Message";
  
@@ -45,7 +45,7 @@
 
 		<title>Contact</title>
 		<meta name="description" content="">
-		<meta name="author" content="Alisa Prusa">
+		<meta name="author" content="Alisa P.">
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 
@@ -56,6 +56,18 @@
 		<link href="../defaultStyle.css" rel="stylesheet" type="text/css">
 		<link href="contactStyle.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		
+		<!-- IE FIX -->
+
+        <!--[if lt IE 9]>
+        
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        	<script src="/js/html5shiv.js"></script>
+      		<script src="/js/respond.js"></script>
+
+        <![endif]-->
+
+        <!-- END IE FIX -->
 	</head>
 
 	<body>
@@ -68,7 +80,7 @@
                         <!--Logo image button to go make to main page-->
                         <a href="../">
                         	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
-                        	<img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+                        	<p style="text-align: center; margin: auto;">Bonded and Insured</p>
                         </a>
 
                         <!--Button that is created for menu when screen size reaches a certain limit-->
@@ -100,12 +112,12 @@
 	 			<!--input Field to get the user's location to provide the directions-->
 	 			<div id="directionInput">
 	 				<p><b>Get Directions:</b></p>
-					<input type="text" name="StreetAddress" id="StreetAddress" placeholder="Your Street Address" required><br>
-					<input type="text" name="City" id="City" placeholder="City" required><br>
-					<input type="text" name="State" id="State" placeholder="State" required><br>
-					<input type="text" name="Zipcode" id="Zipcode" placeholder="Zipcode" required><br>
-					<input id="submitButton" class="gVButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();">
-					<input id="reopenButton" class="gVButton hidden" type="button" value="See Results" style="margin-top: 5px;" onclick="directionsWindow();">
+					<input type="text" name="StreetAddress" id="StreetAddress" placeholder="Your Street Address" required/><br>
+					<input type="text" name="City" id="City" placeholder="City" required/><br>
+					<input type="text" name="State" id="State" placeholder="State" required/><br>
+					<input type="text" name="Zipcode" id="Zipcode" placeholder="Zipcode" required/><br>
+					<input id="submitButton" class="gVButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();"/>
+					<input id="reopenButton" class="gVButton hidden" type="button" value="See Results" style="margin-top: 5px;" onclick="directionsWindow();"/>
 					<p style="color: #E82C0C;" id="errorText" class="hidden">Sorry there was an issue getting directions.</p>
 	 			</div>
  			
@@ -125,7 +137,7 @@
 	 			<div id="infoContainer">
 		 			<!--email section-->
 		 			<p ><b>Contact Us:</b>
-	                     <a id="emails" href="mailto:goldenviewseniorservices@yahoo.com?subject=Golden View Senior Services">
+	                     <a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">
 	                     	<mark>email</mark>
 	                     </a>
 		        	</p>
@@ -141,11 +153,11 @@
 		 			<!--Contact Form-->
 		 			<form role="form" method="post" action="index.php">
 		 				<p><b>Contact Form:</b></p>
-	                    <input type="text" class="formBox" name="Name" id="Name" placeholder="Your Name" required><br>
-						<input type="text" class="formBox" name="email" id="email" placeholder="Your email" required><br>
-						<input type="text" class="formBox" name="Subject" id="Subject" placeholder="Subject" required><br>
+	                    <input type="text" class="formBox" name="Name" id="Name" placeholder="Your Name" required/><br>
+						<input type="text" class="formBox" name="email" id="email" placeholder="Your email" required/><br>
+						<input type="text" class="formBox" name="Subject" id="Subject" placeholder="Subject" required/><br>
 						<textarea type="text" class="formBox" name="Message" rows=6 id="Message" placeholder="Your Message" required></textarea>
-						<input id="submitButton" class="gVButton" type="submit" name="submit" value="Send" style="margin-top: 5px;">
+						<input id="submitButton" class="gVButton" type="submit" name="submit" value="Send" style="margin-top: 5px;"/>
 	                    <?php echo "$result";?>
 		 			</form>
 		 			
@@ -174,9 +186,8 @@
         </div>
 
 		<script src="../jquery-1.2.0.js"></script>
-    	<script src="../bootstrap/js/bootstrap.min.js"></script>
-    	
-    	<script src="https://maps.googleapis.com/maps/api/js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLyIFVjrMrqgBd2s4yHjxrYyFhk-kXqqc"></script>
     	<script src="../js/googleMap.js"></script>
+    	<script src="../bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>

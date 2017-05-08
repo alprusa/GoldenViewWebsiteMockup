@@ -8,7 +8,6 @@ var map;
 
 var directionsCalculated = false;
 
-
 function initialize() {
 	directionsDisplay = new google.maps.DirectionsRenderer();
 
