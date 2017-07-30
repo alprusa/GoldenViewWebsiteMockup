@@ -72,19 +72,21 @@
 
 	<body>
 		<div id="mainNav">
+			<!--Logo image button to go make to main page-->
+			<div id="staticBanner">
+	            <p id="logoP"><a href="../">
+	            	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+	            </a></p>
+	            <p id="topInfo"><b>Bonded and Insured</b> &nbsp;&nbsp; | &nbsp;&nbsp; Call Us: <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a></p>
+            </div>
+                        
 			<!--Navbar html section-->
-			<nav class="navbar navbar-static-top" role="navigation">
+			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation">
                 <div class="container-fluid">
 
                     <div class="navbar-header">
-                        <!--Logo image button to go make to main page-->
-                        <a href="../">
-                        	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
-                        	<p style="text-align: center; margin: auto;">Bonded and Insured</p>
-                        </a>
-
                         <!--Button that is created for menu when screen size reaches a certain limit-->
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -93,11 +95,12 @@
 
                     <!--Buttons to go to different pages of the website-->
                     <div class="collapse navbar-collapse" id="navItems">
-                        <ul class="nav navbar-nav">
-                            <li><a href="../">Home</a></li>
+                    	 <button class="btn-success btn" id="careButton">Request Care</button><br id="buttonBreak" class="hidden"/>
+                        <ul class="nav navbar-nav" id="navUl" style="clear:right;">
+                            <li><a href="./">Home</a></li>
 							<li><a href="../services/">Services</a></li>
 							<li><a href="../about/">About Us</a></li>
-							<li><a href="./">Contact</a></li>
+							<li><a href="../contact/">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -107,31 +110,33 @@
  			<div id="SwooshDiv">
  			<div id="containerText">
  				<!--Google Map for directions-->
-	 			<div id="googleMap"></div>
+ 				<div id="mapContainer">
+		 			<div id="googleMap"></div>
+		 			
+		 			<!--input Field to get the user's location to provide the directions-->
+		 			<div id="directionInput">
+		 				<p><b>Get Directions:</b></p>
+						<input type="text" name="StreetAddress" id="StreetAddress" placeholder="Your Street Address" required/><br>
+						<input type="text" name="City" id="City" placeholder="City" required/><br>
+						<input type="text" name="State" id="State" placeholder="State" required/><br>
+						<input type="text" name="Zipcode" id="Zipcode" placeholder="Zipcode" required/><br>
+						<input id="submitButton" class="gVButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();"/>
+						<input id="reopenButton" class="gVButton hidden" type="button" value="See Results" style="margin-top: 5px;" onclick="directionsWindow();"/>
+						<p style="color: #E82C0C;" id="errorText" class="hidden">Sorry there was an issue getting directions.</p>
+		 			</div>
 	 			
-	 			<!--input Field to get the user's location to provide the directions-->
-	 			<div id="directionInput">
-	 				<p><b>Get Directions:</b></p>
-					<input type="text" name="StreetAddress" id="StreetAddress" placeholder="Your Street Address" required/><br>
-					<input type="text" name="City" id="City" placeholder="City" required/><br>
-					<input type="text" name="State" id="State" placeholder="State" required/><br>
-					<input type="text" name="Zipcode" id="Zipcode" placeholder="Zipcode" required/><br>
-					<input id="submitButton" class="gVButton" type="submit" value="Submit" style="margin-top: 5px;" onclick="calcRoute();"/>
-					<input id="reopenButton" class="gVButton hidden" type="button" value="See Results" style="margin-top: 5px;" onclick="directionsWindow();"/>
-					<p style="color: #E82C0C;" id="errorText" class="hidden">Sorry there was an issue getting directions.</p>
-	 			</div>
- 			
-	 			<!--Text directions pop-up box-->
-	 			<div id="directionsModal" class="modal">
-
-				  <!-- Modal content -->
-				  <div class="modal-content">
-				    <span class="close">x</span>
-				    <div id="textDirections"></div>
-				    <button id="printButton" class="gVButton" type="button" style="margin-top: 5px;" onclick="print();">Print</button>
-				    
-				  </div>
-				
+		 			<!--Text directions pop-up box-->
+		 			<div id="directionsModal" class="modal">
+	
+					  <!-- Modal content -->
+					  <div class="modal-content">
+					    <span class="close">x</span>
+					    <div id="textDirections"></div>
+					    <button id="printButton" class="gVButton" type="button" style="margin-top: 5px;" onclick="print();">Print</button>
+					    
+					  </div>
+					
+					</div>
 				</div>
 	 			
 	 			<div id="infoContainer">
@@ -146,7 +151,7 @@
 		 			<div>
 		 				<p><b>Address:</b> 104 South C St. Suite D
 		 					Lompoc, CA 93436</p>
-		 				<p><b>Phone:</b> (805) 740-9608</p>
+		 				<p><b>Phone:</b> <a href="tel:805-740-9608" value="+18057409608">(805) 740-9608</a></p>
 		 				<p><b>Fax:</b> (805) 740-2044</p>
 		 			</div>
 		 			
@@ -180,8 +185,11 @@
              <footer id="footer">
              	<p>Office Hours: Monday-Friday 9:00am - 5:00pm</p>
 				<p>
-					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
+					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a>
 				</p>
+				<p>
+	            	<a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">operations@goldenviewseniorservices.com</a>
+	            </p>
 			</footer>
         </div>
 
@@ -189,5 +197,6 @@
     	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLyIFVjrMrqgBd2s4yHjxrYyFhk-kXqqc"></script>
     	<script src="../js/googleMap.js"></script>
     	<script src="../bootstrap/js/bootstrap.min.js"></script>
+    	<script src="../js/CssChanger.js"></script>
 	</body>
 </html>

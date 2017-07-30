@@ -3,32 +3,35 @@ body{
 }
 
 h3{
-	border-bottom: 2px solid #ffdf27;
+	border-bottom: 2px solid #ffcc66;
 }
 
 a{
 	margin: 0 auto;
 	font-size: 18px;
-	color: #ffdf27 !important;
+	color: #535353 !important;
 }
 
 /*make it so the logo home page button does not have the hover effect that the other buttons have*/
 a:hover,
 a:focus{
     text-decoration: underline !important;
-	color:#ffdf27 !important;
-	text-decoration-color: #ffdf27 !important;
+	color:#535353 !important;
+	text-decoration-color: #535353 !important;
 }
 
 mark{
-	background-color: #535353 !important;
-	color: #ffdf27 !important;
+	background-color: rgba(255, 204, 102, 0.5) !important;
+	color: #535353 !important;
+	border-radius: 5%;
 }
 
 /*navigation bar css content*/
 nav{
-	border-bottom: 2px #ffdf27 solid !important;
+	border-bottom: 2px #535353 solid !important;
 }
+
+.navbar-collapse { border-color: rgba(83, 83, 83, 0.3) !important; }
 
 #mainNav{
     top: 1%;
@@ -38,7 +41,7 @@ nav{
 }
 
 .navbar{
-    background-color: #535353 !important;
+    background-color: #ffcc66 !important;
     text-align: center;
     float:center;
     color: #901389;
@@ -56,27 +59,43 @@ nav{
 }
 
 .navbar .navbar-toggle .icon-bar{
-  background-color: #ffdf27 !important;
+  background-color: #535353 !important;
 }
 
 .navbar .navbar-toggle{
-  border-color: #ffdf27 !important;
+  border-color: #535353 !important;
 }
 
 /*content inside the navigation bar*/
-#navItems{
-    padding-top: 20px;
-}
 
 #navItems a:hover,
 #navItems a:focus{
-    background-color: #535353 !important;
+    background-color: #ffcc66 !important;
 }
 
 #logo{
 	margin: 0 auto;
     width:200px;
-    border: 2px #ffdf27 solid;
+}
+
+#logoP{
+	float:left;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+#topInfo{
+	float: right;
+	text-align: center;
+	margin: auto;
+	color:black;
+	padding: 40px;
+	padding-bottom: 5px;
+	font-size: 10px;
+}
+
+#careButton{
+	float:right;
 }
 
 /*carousel css content8*/
@@ -91,9 +110,18 @@ nav{
     height: 140px;
 }
 
+.carousel-indicators{
+	top:90%;
+}
+
+.carousel-caption{
+	top:57%;
+}
+
 .carouselText{
-	color: #ffdf27;
-	border: none;
+	background-color: rgba(83, 83, 83, 0.5) !important;
+	color: #ffcc66 !important;
+	border-radius: 5%;
 }
 
 /*three column text*/
@@ -105,13 +133,24 @@ nav{
 }
 
 .dataList{
-	border-right: 2px #ffdf27 solid;
+	border-right: 2px #ffcc66 solid;
 }
 
 .spaceList{
 	margin: 0 auto;
 	padding-left: 3px;
 	padding-right: 3px;
+}
+
+#caringTextOverlay{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 10px;
+	z-index: 10000;
+	padding: 5px;
+	background-color: rgba(83, 83, 83, 0.7) !important;
+	color: white !important;
+	border-radius: 5%;
 }
 
 #containerText{
@@ -144,11 +183,11 @@ nav{
 
 #navFooter{
 	margin: 0 auto;
-	background-color: #535353 !important;
+	background-color: #ffcc66 !important;
 	list-style-type: none;
 	text-align: center;
-	border-top: 2px #ffdf27 solid;
-	border-bottom: 2px #ffdf27 solid;
+	border-top: 2px #535353 solid;
+	border-bottom: 2px #535353 solid;
 	padding-right: 8%;
 }
 
@@ -161,13 +200,29 @@ nav{
 #logoBottom{
 	margin: auto;
     width: 100px;
-    border: 2px #ffdf27 solid;
+    border: 2px #ffcc66 solid;
+}
+
+#navUl{
+	padding-left: 120px;
 }
 
 @media (max-width: 600px){
 	.carouselItems{
 		width: 200px;
     	height: 70px;
+	}
+}
+
+@media (max-width: 570px){
+	#navUl{
+		padding-left:0px;
+		margin: auto;
+	}
+	
+	#careButton{
+		float:none;
+		margin: auto;
 	}
 }
 

@@ -91,7 +91,7 @@ input[type=text]{
 	overflow-y:auto;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
 	#googleMap{
 		float: right;
 	}
@@ -106,7 +106,7 @@ input[type=text]{
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 	form{
 		margin: 0 auto;
 	}

@@ -45,17 +45,19 @@
 
 	<body>
 		<div id="mainNav">
+			<!--Logo image button to go make to main page-->
+			<div id="staticBanner">
+	            <p id="logoP"><a href="./">
+	            	<img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+	            </a></p>
+	            <p id="topInfo"><b>Bonded and Insured</b> &nbsp;&nbsp; | &nbsp;&nbsp; Call Us: <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a></p>
+            </div>
+                        
 			<!--Navbar html section-->
-			<nav class="navbar navbar-static-top" role="navigation">
+			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation">
                 <div class="container-fluid">
 
                     <div class="navbar-header">
-                        <!--Logo image button to go make to main page-->
-                        <a href="./">
-                        	<img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
-                        	<p style="text-align: center; margin: auto;">Bonded and Insured</p>
-                        </a>
-
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -66,7 +68,8 @@
 
                     <!--Buttons to go to different pages of the website-->
                     <div class="collapse navbar-collapse" id="navItems">
-                        <ul class="nav navbar-nav">
+                    	<button class="btn-success btn" id="careButton">Request Care</button><br id="buttonBreak" class="hidden"/>
+                        <ul class="nav navbar-nav" id="navUl" style="clear:right;">
                             <li><a href="./">Home</a></li>
 							<li><a href="services/">Services</a></li>
 							<li><a href="about/">About Us</a></li>
@@ -76,6 +79,12 @@
                 </div>
              </nav>
              
+             <h4 id="caringTextOverlay">Caring for our Seniors for over 25 years.</h4>
+             <img src="img/PatientCareSliderSize.png" alt="PatientCare" class="img-responsive" width="100%">
+             
+             <!--Body Text-->
+			<h3 style="padding: 5px; text-align: center; border: none;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
+             
              <!--carousel html section-->
              <div id="containerContent">
                 <!--Setup the Carousel slides to be able to assign the images/videos to a slide index-->
@@ -84,13 +93,16 @@
                         <li data-target = "#thecarousel" data-slide-to = "0" class = "active"></li>
                         <li data-target = "#thecarousel" data-slide-to = "1"></li>
                         <li data-target = "#thecarousel" data-slide-to = "2"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "3"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "4"></li>
+                        <li data-target = "#thecarousel" data-slide-to = "5"></li>
                     </ol>
 
                 <!--Adding the content images/videos to the Carousel slide-->
                 <div class="carousel-inner" role="listbox">
                     <!--Image slide index 0 the Forest Biome mockup image-->
                     <div class="item active">
-                        <img src="img/PatientCareCartoonized.png" alt="Lompoc" class="carouselItems img-responsive">
+                        <img src="img/PatientCareSliderSize.png" alt="Lompoc" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3 class="carouselText">Lompoc</h3>
                         </div>
@@ -98,7 +110,7 @@
 
                     <!--Image slide index 1 the avatar spritesheet-->
                     <div class="item">
-                        <img src="img/PatientCareCartoonized.png" alt="Buelton" class="carouselItems img-responsive">
+                        <img src="img/PatientCareSliderSize.png" alt="Buelton" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3 class="carouselText">Buellton</h3>
                         </div>
@@ -106,9 +118,33 @@
 
                     <!--Video slide index 2 the core release video-->
                     <div class="item">
-                        <img src="img/PatientCareCartoonized.png" alt="Solvang" class="carouselItems img-responsive">
+                        <img src="img/PatientCareSliderSize.png" alt="Solvang" class="carouselItems img-responsive">
                         <div class="carousel-caption">
                             <h3 class="carouselText">Solvang</h3>
+                        </div>
+                    </div>
+                    
+                    <!--Video slide index 3 the core release video-->
+                    <div class="item">
+                        <img src="img/PatientCareSliderSize.png" alt="Solvang" class="carouselItems img-responsive">
+                        <div class="carousel-caption">
+                            <h3 class="carouselText">Santa Maria</h3>
+                        </div>
+                    </div>
+                    
+                    <!--Video slide index 4 the core release video-->
+                    <div class="item">
+                        <img src="img/PatientCareSliderSize.png" alt="Solvang" class="carouselItems img-responsive">
+                        <div class="carousel-caption">
+                            <h3 class="carouselText">Santa Ynez</h3>
+                        </div>
+                    </div>
+                    
+                    <!--Video slide index 5 the core release video-->
+                    <div class="item">
+                        <img src="img/PatientCareSliderSize.png" alt="Solvang" class="carouselItems img-responsive">
+                        <div class="carousel-caption">
+                            <h3 class="carouselText">San Luis Obispo</h3>
                         </div>
                     </div>
                 </div>
@@ -127,8 +163,11 @@
                 </div>
 			</div>
 			
-			<!--Body Text-->
-			<h3 style="text-align: center; border: none;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
+			<div align="center">
+				<h3>Office Hours:</h3>
+				<p>Monday-Friday 9:00am - 5:00pm</p>
+				<a href="contact/"><button class="btn-warning btn" style="color: #535353;">Contact Us</button></a>
+			</div><br/>
 			
 			<!--Read more info direction sections-->
 			<div id="SwooshDiv">
@@ -180,9 +219,11 @@
              <footer id="footer" class="row">
              	<p>Office Hours: Monday-Friday 9:00am - 5:00pm</p>
 				<p>
-					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | 805-740-9608
+					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a>
 				</p>
-				
+				<p>
+	            	<a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">operations@goldenviewseniorservices.com</a>
+	            </p>
 			</footer>
         </div>
 
