@@ -1,3 +1,12 @@
+if(window.innerWidth < 800){
+    $("#careInner").removeClass("hidden");
+    $("#careOuter").addClass("hidden");
+}
+else{
+    if($("#careOuter").hasClass("hidden")) $("#careOuter").removeClass("hidden");
+    if(!$("#careOuter").hasClass("hidden")) $("#careInner").addClass("hidden");
+}
+
 $(document).ready(function(){
 	if($("#collapseButton").is(":visible")){
 	    $(".dataList").css("border", "none");
@@ -6,6 +15,9 @@ $(document).ready(function(){
 	    
 	    $(".readMore").css("padding-left", "40%");
 	    $(".readMore").css("float", "none");
+	    
+	    $("#careInner").removeClass("hidden");
+	    $("#careOuter").addClass("hidden");
     }
     else{
     	$(".dataList").css("border", "none");
@@ -14,6 +26,9 @@ $(document).ready(function(){
 	    
 	    $(".readMore").css("padding-left", "0");
 	    $(".readMore").css("float", "right");
+	    
+	    if($("#careOuter").hasClass("hidden")) $("#careOuter").removeClass("hidden");
+	    $("#careInner").addClass("hidden");
     }
     
     if(window.innerWidth > 550){
@@ -38,6 +53,9 @@ $(document).ready(function(){
 		    
 		    $(".readMore").css("padding-left", "40%");
 		    $(".readMore").css("float", "none");
+		    
+		    $("#careInner").removeClass("hidden");
+		    $("#careOuter").addClass("hidden");
 	    }
 	    else{
 	    	$(".dataList").css("border", "none");
@@ -46,16 +64,22 @@ $(document).ready(function(){
 		    
 		    $(".readMore").css("padding-left", "0");
 		    $(".readMore").css("float", "right");
+		    
+		    if($("#careOuter").hasClass("hidden")) $("#careOuter").removeClass("hidden");
+		    $("#careInner").addClass("hidden");
 	    }
 	    
 	    if(window.innerWidth > 570){
 	    	$("#logoP").css("float", "left");
-	    	if($("#topInfo").hasClass("hidden")) $("#topInfo").removeClass("hidden");
 	    	$("#buttonBreak").addClass("hidden");
+	    	
+	    	if($("#topInfo").hasClass("hidden")) $("#topInfo").removeClass("hidden");
 	    }else{
 	    	$("#topInfo").addClass("hidden");
-	    	if($("#buttonBreak").hasClass("hidden")) $("#buttonBreak").removeClass("hidden");
 	    	$("#logoP").css("float", "none");
+	    	
+	    	if($("#buttonBreak").hasClass("hidden")) $("#buttonBreak").removeClass("hidden");
+
 	    }
 	    
 	    if(window.innerWidth > 1300){
@@ -65,3 +89,8 @@ $(document).ready(function(){
 	    }
     });
 });
+
+//to fix
+//issue the request care button does not do not center in phone instantly
+//issue the request care button page form does not do not center all input boxes in phone instantly
+//mobile can't see the captions on slider images

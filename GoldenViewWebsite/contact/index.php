@@ -83,8 +83,9 @@
 			<!--Navbar html section-->
 			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation">
                 <div class="container-fluid">
-
-                    <div class="navbar-header">
+					<a href="../requestcare/" id="careOuter"><button class="btn-success btn" class="careButton">Request Care</button></a>
+                    <div class="navbar-header" id="navToggler" style="clear:right;">
+                    	<a href="../requestcare/" id="careInner" class="hidden"><button class="btn-success btn" class="careButton">Request Care</button></a>
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -95,8 +96,7 @@
 
                     <!--Buttons to go to different pages of the website-->
                     <div class="collapse navbar-collapse" id="navItems">
-                    	 <button class="btn-success btn" id="careButton">Request Care</button><br id="buttonBreak" class="hidden"/>
-                        <ul class="nav navbar-nav" id="navUl" style="clear:right;">
+                    	<ul class="nav navbar-nav" id="navUl" style="clear:right;">
                             <li><a href="./">Home</a></li>
 							<li><a href="../services/">Services</a></li>
 							<li><a href="../about/">About Us</a></li>
@@ -107,7 +107,7 @@
              </nav>
              
  			<!--Main text field-->
- 			<div id="SwooshDiv">
+ 			<div id="SwooshDiv" style="clear:left;">
  			<div id="containerText">
  				<!--Google Map for directions-->
  				<div id="mapContainer">
@@ -143,7 +143,7 @@
 		 			<!--email section-->
 		 			<p ><b>Contact Us:</b>
 	                     <a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">
-	                     	<mark>email</mark>
+	                     	operations@goldenviewseniorservices
 	                     </a>
 		        	</p>
 		 			
@@ -169,7 +169,7 @@
 		 			
 	 			</div>
  			</div>
- 			</div>
+ 			</div><br/>
  			
  			<!--Buttons to go to different pages of the website-->
             <div>

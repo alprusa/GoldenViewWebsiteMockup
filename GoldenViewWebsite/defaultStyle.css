@@ -94,8 +94,14 @@ nav{
 	font-size: 10px;
 }
 
-#careButton{
-	float:right;
+#careOuter{
+	float: right;
+	padding-right: 10px;
+}
+
+#careInner{
+	float: left;
+	padding-left: 10px;
 }
 
 /*carousel css content8*/
@@ -167,9 +173,7 @@ nav{
 
 #cardImg{
 	margin: auto;
-	width: 600px;
-	height: 300px;
-	padding-right: 5%;
+	width: 100%;
 }
 
 /*footer content*/
@@ -214,15 +218,16 @@ nav{
 	}
 }
 
-@media (max-width: 570px){
+@media (max-width: 800px){
 	#navUl{
 		padding-left:0px;
 		margin: auto;
 	}
-	
-	#careButton{
-		float:none;
-		margin: auto;
+}
+
+@media (min-width: 1000px){
+	#cardImg{
+		width: 60%;
 	}
 }
 
@@ -230,5 +235,9 @@ nav{
 	.swoosh{
 	    width: 50%;
 	    height: 50%;
+	}
+	
+	a{
+		font-size: 12px;
 	}
 }

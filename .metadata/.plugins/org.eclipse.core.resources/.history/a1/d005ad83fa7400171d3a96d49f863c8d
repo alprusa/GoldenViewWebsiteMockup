@@ -1,0 +1,192 @@
+<?php
+	if (isset($_POST["submit"])) {
+        $Name = $_POST['Name'];
+		$email = $_POST['Email'];
+		$phone = $_POST['Phone'];
+		$senior = $_POST['Senior'];
+		$age = $_POST['Age'];
+        $zip = $_POST['Zip'];
+		$subject = "Care Request";
+		$Message = $_POST['Message'];
+		$to = 'operations@goldenviewseniorservices.com';
+		
+		$body = "From: $Name\nE-Mail: $email\nPhone: $phone\nSenior Name: $senior\nAge: $age\nZipcode Location: $zip\nMessage:\n $Message";
+		
+		// Check if email has been entered and is valid
+		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			$errEmail = 'Please enter a valid email address.';
+		}
+		
+		//check if age is vaild
+		if(!is_numeric($age)){
+			$errAge = 'Please enter a valid numeric age.';
+		}
+		
+		//vaild zipcode
+		if(!is_numeric($zip)){
+			$errZip = 'Please enter a valid numeric ZipCode.';
+		}
+		
+		//valid phone number
+		$numbers = preg_replace('/[^0-9]/', '', $phone);
+		if ($numbers > 9 && $numbers < 14){
+			$errPhone = 'Please enter a valid numeric Phone Number.';
+		}
+ 
+        // If there are no errors, send the email
+        if (!$errEmail && !$errPhone && !$errZip && !$errAge) {
+            if (mail ($to, $subject, $body, $email)) {
+                $result='<p class="text-success">Thank You! We will be in touch.</p>';
+            } else {
+                $result='<p class="text-danger">Sorry there was an error sending your message. Please try again later.</p>';
+            }
+        }
+	}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Contact</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alisa P.">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<link href="../defaultStyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		
+		<style>
+			#containerText{
+				margin: auto;
+			}
+		</style>
+		
+		<style>
+			.formBox{
+				padding: 10px;
+			}
+		</style>
+		
+		<!-- IE FIX -->
+
+        <!--[if lt IE 9]>
+        
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        	<script src="/js/html5shiv.js"></script>
+      		<script src="/js/respond.js"></script>
+
+        <![endif]-->
+
+        <!-- END IE FIX -->
+	</head>
+
+	<body>
+		<div id="mainNav">
+			<!--Logo image button to go make to main page-->
+			<div id="staticBanner">
+	            <p id="logoP"><a href="../">
+	            	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+	            </a></p>
+	            <p id="topInfo"><b>Bonded and Insured</b> &nbsp;&nbsp; | &nbsp;&nbsp; Call Us: <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a></p>
+            </div>
+                        
+			<!--Navbar html section-->
+			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <!--Button that is created for menu when screen size reaches a certain limit-->
+                        <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!--Buttons to go to different pages of the website-->
+                    <div class="collapse navbar-collapse" id="navItems">
+                    	<a href="./"><button class="btn-success btn" id="careButton">Request Care</button></a><br id="buttonBreak" class="hidden"/>
+                        <ul class="nav navbar-nav" id="navUl" style="clear:right;">
+                            <li><a href="./">Home</a></li>
+							<li><a href="../services/">Services</a></li>
+							<li><a href="../about/">About Us</a></li>
+							<li><a href="../contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </nav>
+             
+ 			<!--Main text field-->
+ 			<div id="SwooshDiv">
+ 				<div id="containerText">
+		 			<!--email section-->
+		 			<p ><b>Contact Us:</b>
+	                     <a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">
+	                     	operations@goldenviewseniorservices
+	                     </a>
+		        	</p>
+		 			
+		 			<!--address phone number section-->
+		 			<div>
+		 				<p><b>Address:</b> 104 South C St. Suite D
+		 					Lompoc, CA 93436</p>
+		 				<p><b>Phone:</b> <a href="tel:805-740-9608" value="+18057409608">(805) 740-9608</a></p>
+		 				<p><b>Fax:</b> (805) 740-2044</p>
+		 			</div>
+		 			
+		 			<!--Contact Form-->
+		 			<form role="form" method="post" action="./">
+		 				<p><b>Contact Form:</b></p>
+	                    <input type="text" class="formBox" name="Name" id="Name" placeholder="Your Name" required/> 
+						<input type="text" class="formBox" name="Email" id="Email" placeholder="Your Email" required/> <?php echo "$errEmail";?><br><br>
+						<input type="text" class="formBox" name="Phone" id="Phone" placeholder="Your Phone Number" required/> <?php echo "$errPhone";?><br><br>
+						<input type="text" class="formBox" name="Senior" id="Senior" placeholder="Name of person in need of care" required/>
+						<input type="text" class="formBox" name="Age" id="Age" placeholder="Age of person in need of care" required/> <?php echo "$errAge";?>
+						<input type="text" class="formBox" name="Zip" id="Zip" placeholder="ZipCode where care needed" required/> <?php echo "$errZip";?><br><br>
+						<textarea type="text" class="formBox" name="Message" rows=6 id="Message" placeholder="Your Message" required></textarea>
+						<input id="submitButton" class="gVButton" type="submit" name="submit" value="Send" style="margin-top: 5px;"/>
+	                    <?php echo "$result";?>
+		 			</form>
+ 				</div>
+ 			</div><br/>
+ 			
+ 			<!--Buttons to go to different pages of the website-->
+            <div>
+                <ul id="navFooter">
+                    <li><a href="../">Home</a></li>
+					<li><a href="../services/">Services</a></li>
+					<li><a href="../about/">About Us</a></li>
+					<li><a href="./">Contact</a></li>
+                </ul>
+            </div>
+ 			
+			<!--Footer section-->
+             <footer id="footer">
+             	<p>Office Hours: Monday-Friday 9:00am - 5:00pm</p>
+				<p>
+					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a>
+				</p>
+				<p>
+	            	<a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">operations@goldenviewseniorservices.com</a>
+	            </p>
+			</footer>
+        </div>
+
+		<script src="../jquery-1.2.0.js"></script>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLyIFVjrMrqgBd2s4yHjxrYyFhk-kXqqc"></script>
+    	<script src="../js/googleMap.js"></script>
+    	<script src="../bootstrap/js/bootstrap.min.js"></script>
+    	<script src="../js/CssChanger.js"></script>
+	</body>
+</html>

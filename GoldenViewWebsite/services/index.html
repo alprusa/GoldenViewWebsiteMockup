@@ -56,8 +56,9 @@
 			<!--Navbar html section-->
 			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation">
                 <div class="container-fluid">
-
-                    <div class="navbar-header">
+					<a href="../requestcare/" id="careOuter"><button class="btn-success btn" class="careButton">Request Care</button></a>
+                    <div class="navbar-header" id="navToggler" style="clear:right;">
+                    	<a href="../requestcare/" id="careInner" class="hidden"><button class="btn-success btn" class="careButton">Request Care</button></a>
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -68,7 +69,6 @@
 
                     <!--Buttons to go to different pages of the website-->
                     <div class="collapse navbar-collapse" id="navItems">
-                    	 <button class="btn-success btn" id="careButton">Request Care</button><br id="buttonBreak" class="hidden"/>
                         <ul class="nav navbar-nav" id="navUl" style="clear:right;">
                             <li><a href="../">Home</a></li>
 							<li><a href="../services/">Services</a></li>
@@ -79,7 +79,7 @@
                 </div>
              </nav>
              
-             <div id="SwooshDiv">
+             <div id="SwooshDiv" style="clear:left;">
              
  			<!--Main text field-->
  			<div id="containerText">
