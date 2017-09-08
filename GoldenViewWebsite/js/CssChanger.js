@@ -94,3 +94,4 @@ $(document).ready(function(){
 //issue the request care button does not do not center in phone instantly
 //issue the request care button page form does not do not center all input boxes in phone instantly
 //mobile can't see the captions on slider images
+//add images to services page and why age alone
