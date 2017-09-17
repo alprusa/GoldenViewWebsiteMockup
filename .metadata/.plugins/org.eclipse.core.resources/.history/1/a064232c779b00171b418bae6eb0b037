@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Golden View Senior Services</title>
+		<meta name="description" content="">
+		<meta name="author" content="Alisa Prusa">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<meta name="google-site-verification" content="rB7Tis3nIzl6JhJXk6SmgAPoLWKkFKIOC32nVlrz31w" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		
+		<link href="defaultStyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		
+		<style>
+			#SwooshDiv{
+				margin: 0 auto;
+				background-image: url("img/SwooshesMain.svg");
+				background-repeat: repeat-x;
+				background-size: 80% 100%
+			}
+			
+			#caringTextOverlay{
+				position: absolute;
+				top: 20%;
+				margin-left: 10px;
+				z-index: 10000;
+				padding: 5px;
+				background-color: rgba(83, 83, 83, 0.7) !important;
+				color: white !important;
+				border-radius: 5%;
+			}
+			
+			@media (max-width: 500px){
+				#caringTextOverlay{
+					top: 40%;
+				}
+			}
+			
+			.carousel-inner > .item {
+			    -webkit-transition: 1.0s ease-in-out left;
+			    -moz-transition: 1.0s ease-in-out left;
+			    -o-transition: 1.0s ease-in-out left;
+			    transition: 1.0s ease-in-out left;
+			}
+						
+			/*
+			  Bootstrap Carousel Fade Transition (for Bootstrap 3.3.x)
+			  CSS from:       http://codepen.io/transportedman/pen/NPWRGq
+			  and:            http://stackoverflow.com/questions/18548731/bootstrap-3-carousel-fading-to-new-slide-instead-of-sliding-to-new-slide
+			  Inspired from:  http://codepen.io/Rowno/pen/Afykb 
+			*/
+			.carousel-fade .carousel-inner .item {
+			  opacity: 0;
+			  transition-property: opacity;
+			}
+			
+			.carousel-fade .carousel-inner .active {
+			  opacity: 1;
+			}
+			
+			.carousel-fade .carousel-inner .active.left,
+			.carousel-fade .carousel-inner .active.right {
+			  left: 0;
+			  opacity: 0;
+			  z-index: 1;
+			}
+			
+			.carousel-fade .carousel-inner .next.left,
+			.carousel-fade .carousel-inner .prev.right {
+			  opacity: 1;
+			}
+			
+			.carousel-fade .carousel-control {
+			  z-index: 2;
+			}
+			
+			/*
+			  WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+			  Need to override the 3.3 new styles for modern browsers & apply opacity
+			*/
+			@media all and (transform-3d), (-webkit-transform-3d) {
+			    .carousel-fade .carousel-inner > .item.next,
+			    .carousel-fade .carousel-inner > .item.active.right {
+			      opacity: 0;
+			      -webkit-transform: translate3d(0, 0, 0);
+			              transform: translate3d(0, 0, 0);
+			    }
+			    .carousel-fade .carousel-inner > .item.prev,
+			    .carousel-fade .carousel-inner > .item.active.left {
+			      opacity: 0;
+			      -webkit-transform: translate3d(0, 0, 0);
+			              transform: translate3d(0, 0, 0);
+			    }
+			    .carousel-fade .carousel-inner > .item.next.left,
+			    .carousel-fade .carousel-inner > .item.prev.right,
+			    .carousel-fade .carousel-inner > .item.active {
+			      opacity: 1;
+			      -webkit-transform: translate3d(0, 0, 0);
+			              transform: translate3d(0, 0, 0);
+			    }
+			}
+		</style>
+		
+		<!-- IE FIX -->
+
+        <!--[if lt IE 9]>
+        
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        	<script src="/js/html5shiv.js"></script>
+      		<script src="/js/respond.js"></script>
+
+        <![endif]-->
+
+        <!-- END IE FIX -->
+	</head>
+
+	<body>
+		<div id="mainNav">
+			<!--Logo image button to go make to main page-->
+			
+                        
+			<!--Navbar html section-->
+			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation" style="border: none;">
+                <div class="container-fluid" id="navToggleContainer">
+					<a href="requestcare" id="careOuter"><button class="btn-success btn" class="careButton">Request Care</button></a>
+                    <div class="navbar-header" id="navToggler" style="clear:right;">
+                    	<a href="requestcare" id="careInner" class="hidden"><button class="btn-success btn" class="careButton">Request Care</button></a>
+                        <!--Button that is created for menu when screen size reaches a certain limit-->
+                        <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!--Buttons to go to different pages of the website-->
+                    <div class="collapse navbar-collapse" id="navItems">
+                        <ul class="nav navbar-nav" id="navUl">
+                            <li><a href="./">Home</a></li>
+							<li><a href="services/">Services</a></li>
+							<li><a href="about/">About Us</a></li>
+							<li><a href="contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+             </nav>
+             
+             <div id="staticBanner">
+	            <p id="logoP"><a href="./">
+	            	<img src="img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+	            </a></p>
+	            <p id="topInfo"><b>Bonded and Insured</b> &nbsp;&nbsp; | &nbsp;&nbsp; Call Us: <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a></p>
+            </div>
+             
+             <h4 id="caringTextOverlay" style="clear:both;">Caring for our Seniors for over 25 years.</h4>
+             <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+			    <!-- Carousel items -->
+			    <div class="carousel-inner">
+			        <div class="active item"><img src="img/ReadingMedium.jpg" alt="PatientCare" class="img-responsive" width="100%" height="50%"></div>
+			        <div class="item"><img src="img/SupportMedium.jpg" alt="PatientCare" class="img-responsive" width="100%" height="50%"></div>
+			        <div class="item"><img src="img/ChessMedium.jpg" alt="PatientCare" class="img-responsive" width="100%" height="50%"></div>
+			    </div>
+			</div>
+             
+             <!--Body Text-->
+			<h3 style="padding: 5px; text-align: center; border: none;">Offering Senior Care and Companionship Throughout Santa Barbara County</h3>
+			
+			<div align="center">
+				<h3>Office Hours:</h3>
+				<p>Monday-Friday 9:00am - 5:00pm</p>
+				<a href="contact/"><button class="btn-warning btn" style="color: #535353;">Contact Us</button></a>
+			</div><br/>
+			
+			<!--Read more info direction sections-->
+			<div id="SwooshDiv">
+			<div id="columnData" class="row">
+			    <div class="dataList spaceList col-sm-4">
+			    	<h4>Services</h4>
+			    	<p>Service designed to allow seniors to stay where they desire, in their own homes. With personal care,
+			    		meal preparation, and house keeping. With 1 to 24 hours available per day.
+			    		<br><br>
+			    		<a href="services/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			    <div class="dataList spaceList col-sm-4">
+			    	<h4>Benefits</h4>
+			    	<p>We provide one on one care, allowing you to maintain control of you. With living at home there are no
+			    		strict rules of visitation as with facilities. Your individual needs will be addressed as we know
+			    		not everyone is the same.
+			    		<br><br>
+			    		<a href="/services/index.html#benefits" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			     <div class="spaceList col-sm-4">
+			     	<h4>Why Age Alone?</h4>
+			    	<p>It's time to call Golden View Senior Services when you answer yes to one or more of several questions.
+			    		<br><br>Does my going to appointments, or shopping depend on the kindness of a neighbor or friend?
+			    		<br><br>
+			    		<a href="whyagealone/" class="readMore"><mark>read more</mark></a>
+			    	</p>
+			    </div>
+			</div>
+			
+			<!--Credit Card info--->
+			<img class="img-responsive" id="cardImg" src="img/CreditCards.png"/>
+			
+			</div>
+			
+			<!--Buttons to go to different pages of the website-->
+            <div>
+                <ul id="navFooter">
+                    <li><a href="./">Home</a></li>
+					<li><a href="services/">Services</a></li>
+					<!--<li><a href="./"><img src="img/goldenViewLogo.jpg" id="logoBottom"/></a></li>-->
+					<li><a href="about/">About Us</a></li>
+					<li><a href="contact/">Contact</a></li>
+                </ul>
+            </div>
+
+			<!--Footer section-->
+             <footer id="footer" class="row">
+             	<p>Office Hours: Monday-Friday 9:00am - 5:00pm</p>
+				<p>
+					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a> or <a href="tel:805-717-3048" value="+18057173048">805-717-3048</a>
+				</p>
+				<p>
+	            	<a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">operations@goldenviewseniorservices.com</a>
+	            </p>
+			</footer>
+        </div>
+
+		<script src="jquery-1.2.0.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    	<script src="js/CssChanger.js"></script>
+    	<script>
+    		$('.carousel').carousel();
+		</script>
+	</body>
+</html>

@@ -112,19 +112,12 @@
 	<body>
 		<div id="mainNav">
 			<!--Logo image button to go make to main page-->
-			<div id="staticBanner">
-	            <p id="logoP"><a href="../">
-	            	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
-	            </a></p>
-	            <p id="topInfo"><b>Bonded and Insured</b> &nbsp;&nbsp; | &nbsp;&nbsp; Call Us: <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a></p>
-            </div>
-                        
 			<!--Navbar html section-->
 			<nav class="navbar navbar-static-top" style="clear: both;" role="navigation">
                 <div class="container-fluid">
-					<a href="../requestcare/" id="careOuter"><button class="btn-success btn" class="careButton">Request Care</button></a>
+					<a href="../requestcare/" id="careOuter"><button class="btn-success btn careButton">Request Care</button></a>
                     <div class="navbar-header" id="navToggler" style="clear:right;">
-                    	<a href="../requestcare/" id="careInner" class="hidden"><button class="btn-success btn" class="careButton">Request Care</button></a>
+                    	<a href="../requestcare/" id="careInner" class="hidden"><button class="btn-success btn careButton">Request Care</button></a>
                         <!--Button that is created for menu when screen size reaches a certain limit-->
                         <button id="collapseButton" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
@@ -145,8 +138,15 @@
                 </div>
              </nav>
              
+             <div id="staticBanner">
+	            <p id="logoP"><a href="../">
+	            	<img src="../img/goldenViewLogo.jpg" class="img-responsive" id="logo"/>
+	            </a></p>
+	            <p id="topInfo"><b>Bonded and Insured</b> &nbsp;&nbsp; | &nbsp;&nbsp; Call Us: <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a></p>
+            </div>
+             
  			<!--Main text field-->
- 			<div style="clear:left;"><img src="/img/PatientCareHalfScreen.png" class="img-responsive" width="50%" id="halfScreenImage"/></div><br id="buttonBreak" class="hidden">
+ 			<div style="clear:left;"><img src="../img/ChessMedium.jpg" class="img-responsive" width="50%" id="halfScreenImage"/></div><br id="buttonBreak" class="hidden">
  			<div id="SwooshDiv" align="center">
  				<div id="containerText">
 		 			<!--email section-->
@@ -160,7 +160,9 @@
 		 			<div>
 		 				<p><b>Address:</b> 104 South C St. Suite D
 		 					Lompoc, CA 93436</p>
-		 				<p><b>Phone:</b> <a href="tel:805-740-9608" value="+18057409608">(805) 740-9608</a></p>
+		 				<p><b>Phone:</b> <a href="tel:805-740-9608" value="+18057409608">1 (805) 740-9608</a> or</br>
+		 					<a href="tel:805-717-3048" value="+18057173048">805-717-3048</a>
+		 				</p>
 		 				<p><b>Fax:</b> (805) 740-2044</p>
 		 			</div>
 		 			
@@ -194,7 +196,7 @@
              <footer id="footer">
              	<p>Office Hours: Monday-Friday 9:00am - 5:00pm</p>
 				<p>
-					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a>
+					Golden View Senior Services | 104 South C St. Suite D Lompoc, CA 93436 | <a href="tel:805-740-9608" value="+18057409608">805-740-9608</a> or <a href="tel:805-717-3048" value="+18057173048">805-717-3048</a>
 				</p>
 				<p>
 	            	<a id="emails" title="operations@goldenviewseniorservices.com" href="mailto:operations@goldenviewseniorservices.com?subject=Golden View Senior Services">operations@goldenviewseniorservices.com</a>
